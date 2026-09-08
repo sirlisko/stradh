@@ -23,6 +23,6 @@ espellerlo dalla città dopo essersi infuriato con [[Don Matteor]]; un
 incantesimo di quest'ultimo evita il peggio ma il bando resta in vigore.
 Fermato da una pattuglia come straniero sospetto durante la fuga notturna
 dalla città, viene scortato fuori sano e salvo grazie a una Suggestione
-lanciata da [[Ariet]] sul capopattuglia. Ora bandito da [[Vallaki]] insieme
+lanciata da [[Erieth]] sul capopattuglia. Ora bandito da [[Vallaki]] insieme
 a Ireena e Don Matteor, parte con il gruppo verso l'
 [[Accampamento dei Vistani]].

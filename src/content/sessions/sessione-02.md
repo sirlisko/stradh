@@ -2,13 +2,13 @@
 titolo: Indagini a Vallaki e la morte di Padre Lucian Petrovich
 numero: 2
 data: 2026-05-27
-estratto: Il gruppo si divide tra la villa del borgomastro e la bottega del becchino; Ariet assassina il prete di Vallaki su ordine del suo patrono.
+estratto: Il gruppo si divide tra la villa del borgomastro e la bottega del becchino; Erieth assassina il prete di Vallaki su ordine del suo patrono.
 luoghiVisitati: [Vallaki]
 ---
 
 ## Mattina a Vallaki
 
-Prima di dividersi in due squadre, [[Ariet]] riferisce di aver visto un
+Prima di dividersi in due squadre, [[Erieth]] riferisce di aver visto un
 bagliore viola dall'ultimo piano della [[Villa del Borgomastro]] durante la
 sua veglia notturna, e uno stormo di pipistrelli aveva sbattuto contro le
 finestre della [[Locanda di Urwin]]. [[Urwin]] conferma che anche i corvi
@@ -30,7 +30,7 @@ uno stanzino polveroso al piano più alto.
 
 ## Casa del becchino Van der Vort
 
-[[Ariet]] e [[Artemis]] trovano la [[Bottega del Becchino]] vuota e la
+[[Erieth]] e [[Artemis]] trovano la [[Bottega del Becchino]] vuota e la
 ispezionano. Rinvengono una commissione scritta con elegante calligrafia,
 firmata [[P. (identità sconosciuta)|"P."]], che ordina bare con terra dentro — probabile contrabbando
 legato ai vampiri. Trovano anche una statuetta contenente un liquido
@@ -39,10 +39,10 @@ letto.
 
 ## Assassinio di Padre Lucian Petrovich
 
-Ariet, seguendo gli ordini del suo patrono, entra nella
+Erieth, seguendo gli ordini del suo patrono, entra nella
 [[Chiesa di Vallaki]] invisibile durante la messa, lancia Darkness e
 pugnala il prete. [[Padre Lucian Petrovich]] tenta la fuga stringendo le
-reliquie ma viene abbattuto da un Eldritch Blast. Ariet scompare di nuovo
+reliquie ma viene abbattuto da un Eldritch Blast. Erieth scompare di nuovo
 nell'invisibilità, lasciando il punteruolo rubato dal becchino vicino al
 corpo — incolpando implicitamente [[Van der Vort]]. Il caos che ne segue
 include nuvole nere che oscurano il cielo di Vallaki e i fedeli che urlano

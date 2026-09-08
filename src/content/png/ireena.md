@@ -21,5 +21,5 @@ venendo ignorato con freddezza.
 Vargas ordina comunque di disarmarla ed espellerla dalla città quando si
 infuria con [[Don Matteor]]; il bando resta in vigore anche dopo che
 quest'ultimo riesce a placarlo. Lascia [[Vallaki]] insieme al gruppo,
-scortata fuori dalle guardie grazie a una Suggestione di [[Ariet]], diretta
+scortata fuori dalle guardie grazie a una Suggestione di [[Erieth]], diretta
 verso l'[[Accampamento dei Vistani]].

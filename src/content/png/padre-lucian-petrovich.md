@@ -3,7 +3,7 @@ titolo: Padre Lucian Petrovich
 ruolo: Sacerdote di Vallaki
 stato: morto
 luogo: Chiesa di Vallaki
-estratto: Sacerdote di Vallaki, rifugio di Ismark e Ireena, assassinato da Ariet su ordine del suo patrono.
+estratto: Sacerdote di Vallaki, rifugio di Ismark e Ireena, assassinato da Erieth su ordine del suo patrono.
 ---
 
 Custode della [[Chiesa di Vallaki]], dà rifugio a [[Ismark Kolyanovich]] e
@@ -16,7 +16,7 @@ consacrata la chiesa — sono state rubate; le indagini portano alla
 [[Bottega del Becchino]], dove il gruppo le recupera dopo uno scontro con
 un gruppo di vampiri.
 
-Ucciso durante la messa da [[Ariet]] (invisibile, sotto Darkness), su
+Ucciso durante la messa da [[Erieth]] (invisibile, sotto Darkness), su
 ordine del patrono di quest'ultimo, che aveva comandato di uccidere "il
 prete" senza specificare quale. Il punteruolo lasciato vicino al corpo,
 rubato dalla bottega di [[Van der Vort]], punta i sospetti su di lui. La

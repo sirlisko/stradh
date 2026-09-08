@@ -4,8 +4,8 @@ titolo: Riassunto della campagna
 
 ## Le origini, fuori da Barovia
 
-Il patrono di [[Ariet]] gli ordina di recuperare un anello dal dito di uno
-dei banditi di una banda di fratelli. Ariet e Tarik li inseguono e li
+Il patrono di [[Erieth]] gli ordina di recuperare un anello dal dito di uno
+dei banditi di una banda di fratelli. Erieth e Tarik li inseguono e li
 affrontano a casa del padre di [[Artemis]], insieme a lui e a
 [[Don Matteor]]. Il terzo fratello — quello che dovrebbe portare l'anello —
 non è presente allo scontro.
@@ -98,7 +98,7 @@ armatura. [[Artemis]] li ha seguiti fino all'ingresso della loro casa senza
 riuscire a scoprire altro.
 
 [[Rictavio]], alla locanda da un mese, dice di dirigere un circo ambulante
-in cerca di talenti e stranezze — [[Ariet]] lo ritiene poco credibile: lo
+in cerca di talenti e stranezze — [[Erieth]] lo ritiene poco credibile: lo
 ha seguito mentre portava cibo alla rimessa dei carri, dove è salito su un
 carro chiuso e ci ha gettato dentro qualcosa. La [[Torre Abbandonata]]
 fuori città, di nuovo abitata con un carro identico parcheggiato davanti,
@@ -111,8 +111,8 @@ posizione ambigua, contraria ai druidi ma di lealtà incerta.
 
 ## Fine "stagione 1"
 
-Il patrono di Ariet gli ordina di uccidere "il prete", senza specificare
-quale. Ariet esegue in [[Chiesa di Vallaki|chiesa a Vallaki]] giocando tra
+Il patrono di Erieth gli ordina di uccidere "il prete", senza specificare
+quale. Erieth esegue in [[Chiesa di Vallaki|chiesa a Vallaki]] giocando tra
 invisibilità e oscurità, senza essere visto: la gente scappa urlando al
 demonio. Lascia vicino al corpo un pugnale rubato dalla bottega del
 becchino per far ricadere la colpa su di lui. Il cielo si addensa in nubi
@@ -133,7 +133,7 @@ un incantesimo una carneficina, ma si inimica [[Barone Vargas]] al punto
 da farsi bandire da [[Vallaki]] insieme a [[Ismark Kolyanovich]] e
 [[Ireena]]. Il gruppo lascia la città all'alba, nascosto per la notte
 nella [[Bottega del Becchino]] ed evitando le pattuglie grazie a una
-Suggestione di [[Ariet]], diretto verso l'[[Accampamento dei Vistani]] —
-ritenuti gli unici a sapere come lasciare le nebbie di Barovia. Ariet,
+Suggestione di [[Erieth]], diretto verso l'[[Accampamento dei Vistani]] —
+ritenuti gli unici a sapere come lasciare le nebbie di Barovia. Erieth,
 riflettendo sulla lettera di Strahd ancora intonsa, comincia a dubitare
 che il vampiro sia davvero il loro nemico principale.

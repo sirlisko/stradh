@@ -2,7 +2,7 @@
 titolo: La soffitta segreta della villa
 numero: 4
 data: 2026-08-13
-estratto: Ariet risale in cima alla villa del borgomastro, il gruppo lo raggiunge con una corda e scoprono una porta trappola che nasconde un macabro studio segreto.
+estratto: Erieth risale in cima alla villa del borgomastro, il gruppo lo raggiunge con una corda e scoprono una porta trappola che nasconde un macabro studio segreto.
 luoghiVisitati: [Vallaki]
 ---
 
@@ -13,7 +13,7 @@ un buco nel piano di cui si accorgono solo ora.
 
 ## In cima alla villa
 
-[[Ariet]], ancora invisibile, si è arrampicato fino all'ultima soffitta
+[[Erieth]], ancora invisibile, si è arrampicato fino all'ultima soffitta
 polverosa raggiunta nella sessione precedente. Nota che la lanterna sul
 vecchio tavolo contiene dell'olio e sembra usata di recente. Ascolta alla
 porta (nessun suono, prova perfetta), la apre lentamente: oltre si apre una
@@ -22,7 +22,7 @@ bianche, casse, bauli — attraverso il caos si intravede un sentiero ben
 battuto. Una finestra si affaccia su quello che è in realtà la
 prosecuzione del tetto, non un balcone.
 
-Per non interrompere la propria invisibilità, Ariet agita la lanterna
+Per non interrompere la propria invisibilità, Erieth agita la lanterna
 spenta per attirare l'attenzione del gufo famiglio di [[Tarik]], in
 ricognizione nei paraggi. Una volta stabilito il contatto, chiede che gli
 venga portata su la corda: troppo pesante per il gufo, viene invece
@@ -56,7 +56,7 @@ incantesimo di teletrasporto. Un controllo arcano conferma il sospetto.
 
 Decisi a entrare, spalancano la porta di scatto: scatta una trappola
 runica esplosiva che li investe con una scarica elettrica (danni pesanti,
-in parte evitati da Ariet con un balzo indietro riflesso). Dietro la porta
+in parte evitati da Erieth con un balzo indietro riflesso). Dietro la porta
 si rivela uno studio improvvisato ricavato nella soffitta: tavoli coperti
 di pergamene con diagrammi di cerchi di teletrasporto, una libreria con
 una collezione di scheletri di gatto, un tappeto impolverato davanti a una

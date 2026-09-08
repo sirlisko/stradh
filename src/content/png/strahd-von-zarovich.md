@@ -18,5 +18,5 @@ non ostili con lui, prima che le spedizioni cessassero qualche decennio
 fa; i druidi che ora infestano la cantina lavoravano per lui e gli hanno
 rubato una delle tre gemme del vino.
 
-Il patrono di [[Ariet]] considera il potere di Strahd "di gran lunga
+Il patrono di [[Erieth]] considera il potere di Strahd "di gran lunga
 inferiore" al proprio.

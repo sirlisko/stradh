@@ -17,6 +17,6 @@ contrabbando legato ai vampiri — oltre a una statuetta con un liquido
 misterioso (poi identificato come pozione di cura ferite) e 50 monete
 d'oro sotto il letto.
 
-Dopo l'assassinio di [[Padre Lucian Petrovich]], [[Ariet]] lascia vicino al
+Dopo l'assassinio di [[Padre Lucian Petrovich]], [[Erieth]] lascia vicino al
 corpo un punteruolo rubato proprio dalla sua bottega, facendo ricadere
 implicitamente la colpa su di lui.

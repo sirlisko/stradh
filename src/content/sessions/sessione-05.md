@@ -11,7 +11,7 @@ tag: [colpo di scena]
 
 Entrati nello studio ricavato nella soffitta della [[Villa del
 Borgomastro]], il gruppo viene attaccato da tre scheletri di gatto animati
-che si nascondevano tra le cianfrusaglie — [[Artemis]] e [[Ariet]] li
+che si nascondevano tra le cianfrusaglie — [[Artemis]] e [[Erieth]] li
 abbattono rapidamente (uno colpito da un Mind Sliver che gli sbriciola
 letteralmente il cranio).
 
@@ -25,14 +25,14 @@ sulle pergamene — un tentativo di replicare l'incantesimo, mal riuscito.
 
 Non avendo la certezza che l'incantesimo di teletrasporto sentito poco
 prima sia andato a segno, il gruppo teme che il lanciatore sia ancora
-nella stanza, invisibile. Ariet e Artemis lanciano Fatuo Fuoco su tutta la
+nella stanza, invisibile. Erieth e Artemis lanciano Fatuo Fuoco su tutta la
 sala: si illuminano mobili e scheletri, e anche i tre "bambini" nell'angolo
 — rivelandosi manichini di legno intagliato vestiti da scolari, non
 persone vere (Artemis ne decapita uno per curiosità macabra, confermando
 che si tratta solo di legno). Nessuna persona invisibile viene illuminata.
 
 Sospettando che l'incantatore sia comunque acquattato vicino alla porta,
-Ariet finge di vederlo e sferra un colpo alla cieca: colpisce qualcosa di
+Erieth finge di vederlo e sferra un colpo alla cieca: colpisce qualcosa di
 invisibile. Un secondo colpo lo costringe a rivelarsi: un giovane,
 terrorizzato.
 
@@ -41,7 +41,7 @@ terrorizzato.
 Dagli anelli che porta — incluso uno con lo stemma della casata
 Vallakovic — e dalla somiglianza del volto, il gruppo riconosce in lui il
 figlio segreto di [[Barone Vargas]]. Sotto interrogatorio (guidato da
-Artemis, con Ariet a fargli da spalla) racconta di aver trovato il
+Artemis, con Erieth a fargli da spalla) racconta di aver trovato il
 grimorio nella biblioteca del padre e di essersi messo a studiare da
 autodidatta. Alcune sere prima, un nobile incappucciato sconosciuto si era
 presentato alla villa — fatto entrare dalla serva Gertrude, che nessuno
@@ -107,7 +107,7 @@ potrebbe presto arrivare il momento di scegliere da che parte stare.
 
 Il gruppo decide di dirigersi verso l'accampamento dei Vistani, ritenuti
 gli unici a sapere come lasciare le nebbie di Barovia, rimandando una
-visita ad [[Argynvostholt]]. Ariet, riflettendo sulla lettera di
+visita ad [[Argynvostholt]]. Erieth, riflettendo sulla lettera di
 [[Strahd von Zarovich]] ancora intonsa sul tavolino, confessa di non
 essere più così sicuro che il vampiro sia il loro vero nemico, viste le
 azioni ben peggiori a cui hanno assistito a Vallaki.
@@ -116,7 +116,7 @@ Per evitare il rastrellamento di guardie scatenato dall'omicidio di
 [[Padre Lucian Petrovich]] e dalla scoperta dell'"incidente" alla villa,
 il gruppo passa la notte nascosto nella [[Bottega del Becchino]], ormai
 libera dai vampiri. Durante gli spostamenti notturni, una pattuglia ferma
-Ismark come straniero sospetto: Ariet, nascosto, incanta con Suggestione
+Ismark come straniero sospetto: Erieth, nascosto, incanta con Suggestione
 il capopattuglia convincendolo a scortare gli "amici" fuori dalla città in
 sicurezza — cosa che avviene senza intoppi.
 

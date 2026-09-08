@@ -9,11 +9,11 @@ Membro del gruppo fin dallo scontro con la banda di fratelli fuori da
 Barovia (a casa di suo padre). Specializzato in infiltrazione: si è reso
 invisibile per esplorare la [[Villa del Borgomastro]] dall'esterno, ha
 seguito gli incappucciati de [[I Veri Nobili di Vallaki]] fino al loro
-covo, e ha ispezionato con [[Ariet]] la [[Bottega del Becchino]] dove hanno
+covo, e ha ispezionato con [[Erieth]] la [[Bottega del Becchino]] dove hanno
 trovato le statuette misteriose e la commissione di bare piene di terra.
 
 Durante l'infiltrazione nella villa di [[Barone Vargas]] è entrato da una
-finestra sul retro con una corda calata da [[Ariet]], evitando le guardie
+finestra sul retro con una corda calata da [[Erieth]], evitando le guardie
 con un salto acrobatico silenzioso quando il piano è quasi saltato per un
 letto spostato rumorosamente.
 

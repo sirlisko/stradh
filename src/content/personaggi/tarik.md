@@ -12,7 +12,7 @@ Borgomastro]] e a fare da vedetta durante l'infiltrazione.
 Ha identificato le due statuette trovate nella [[Bottega del Becchino]]:
 una pozione di cura ferite e una pozione che riduce la Forza di chi la
 beve. Ha anche ripulito con un tocco di prestidigitazione gli scarponi
-infangati di [[Ariet]] durante l'infiltrazione nella villa. Non dispone di
+infangati di [[Erieth]] durante l'infiltrazione nella villa. Non dispone di
 magia di comunicazione a lunga distanza, ma può piazzare allarmi,
 identificare oggetti magici e ha Calm Emotions preparata.
 

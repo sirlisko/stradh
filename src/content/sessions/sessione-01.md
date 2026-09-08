@@ -15,7 +15,7 @@ sulla spartizione del carico.
 
 ## Trattativa con Urwin
 
-[[Ariet]] entra nella locanda e parla privatamente con [[Urwin]]: si
+[[Erieth]] entra nella locanda e parla privatamente con [[Urwin]]: si
 raggiunge un accordo per cui il gruppo cede apparentemente l'intero
 carico, ma in realtà trattiene una botte e mezza e delle bottiglie. Le
 botti vuote vengono ricaricate sul carro per mantenere le apparenze, e il

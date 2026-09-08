@@ -1,5 +1,5 @@
 ---
-titolo: Ariet
+titolo: Erieth
 stato: vivo
 estratto: Legato a un misterioso patrono a cui riferisce tramite un rituale di sangue; esegue i suoi ordini senza fare domande.
 tag: [patto, assassino]
@@ -7,7 +7,7 @@ tag: [patto, assassino]
 
 Ha un patrono a cui riferisce regolarmente tramite un rituale (si taglia la
 mano e ne contatta la presenza in un vuoto bianco). Il patrono percepisce
-tutto ciò che Ariet vede e fa, e gli ha ordinato fin dall'inizio della
+tutto ciò che Erieth vede e fa, e gli ha ordinato fin dall'inizio della
 campagna di recuperare un anello dal dito di uno dei fratelli banditi
 affrontati fuori da Barovia — missione non ancora conclusa.
 
@@ -36,4 +36,4 @@ loro nemico principale, viste le azioni ben peggiori a cui ha assistito a
 [[Vallaki]].
 
 Nota: in alcuni appunti compare come "Eriet" — probabile refuso, il nome
-usato costantemente è Ariet.
+usato costantemente è Erieth.

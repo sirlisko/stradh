@@ -13,7 +13,7 @@ Le reliquie di un santo, che la tenevano consacrata, vengono rubate e
 ritrovate dal gruppo nella [[Bottega del Becchino]], recuperate dopo uno
 scontro con dei vampiri messi a guardia.
 
-Teatro dell'assassinio di Padre Lucian Petrovich per mano di [[Ariet]],
+Teatro dell'assassinio di Padre Lucian Petrovich per mano di [[Erieth]],
 compiuto durante la messa: il caos che ne segue include nubi nere che
 oscurano il cielo di Vallaki e i fedeli che fuggono urlando che "il
 diavolo è tra noi".
