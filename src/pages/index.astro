@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
+const ultima = sessioni[0];
+---
+<BaseLayout title="Home">
+  <div class="hero">
+    <h1 class="page-title">La Maledizione di Strahd</h1>
+    <div class="ornament" aria-hidden="true">❖</div>
+    <p>
+      Diario della campagna: sessioni giocate, personaggi, PNG incontrati e i
+      luoghi oscuri di Barovia. Tutte le pagine sono collegate tra loro — segui
+      i link per esplorare la storia.
+    </p>
+  </div>
+
+  {ultima && (
+    <p class="callout">
+      Ultima sessione: <a href={`/diario/${ultima.id}`}>{ultima.data.titolo}</a>
+    </p>
+  )}
+
+  <nav class="card-grid hero-nav">
+    <a class="card" href="/diario/"><h3>Diario</h3><p>Il resoconto di ogni sessione giocata.</p></a>
+    <a class="card" href="/riassunto/"><h3>Riassunto</h3><p>La storia della campagna fin qui, in breve.</p></a>
+    <a class="card" href="/personaggi/"><h3>Personaggi</h3><p>Gli eroi (o sciagurati) del gruppo.</p></a>
+    <a class="card" href="/png/"><h3>PNG</h3><p>Alleati, nemici e comparse di Barovia.</p></a>
+    <a class="card" href="/luoghi/"><h3>Luoghi</h3><p>Villaggi, castelli e luoghi maledetti.</p></a>
+  </nav>
+</BaseLayout>

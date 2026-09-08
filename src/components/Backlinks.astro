@@ -1,0 +1,19 @@
+---
+import { getBacklinksFor } from '../lib/backlinks';
+
+interface Props {
+  url: string;
+}
+const { url } = Astro.props;
+const backlinks = await getBacklinksFor(url);
+---
+{backlinks.length > 0 && (
+  <div class="backlinks">
+    <h2>Menzionato in</h2>
+    <ul>
+      {backlinks.map((link) => (
+        <li><a href={link.url}>{link.title}</a></li>
+      ))}
+    </ul>
+  </div>
+)}

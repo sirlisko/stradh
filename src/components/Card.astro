@@ -1,0 +1,20 @@
+---
+interface Props {
+  href: string;
+  titolo: string;
+  estratto?: string;
+  meta?: string;
+  stato?: string;
+}
+const { href, titolo, estratto, meta, stato } = Astro.props;
+---
+<a class="card" href={href}>
+  <h3>{titolo}</h3>
+  {meta && <p class="entry-meta">{meta}</p>}
+  {estratto && <p>{estratto}</p>}
+  {stato && (
+    <div class="badge-row">
+      <span class={`badge badge-${stato}`}>{stato}</span>
+    </div>
+  )}
+</a>

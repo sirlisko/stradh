@@ -1,0 +1,93 @@
+---
+import { getCollection } from 'astro:content';
+
+const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
+const personaggi = (await getCollection('personaggi')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
+const png = (await getCollection('png')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
+const luoghi = (await getCollection('luoghi')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
+
+const sections = [
+  {
+    label: 'Diario',
+    href: '/diario/',
+    items: sessioni.map((s) => ({ href: `/diario/${s.id}`, label: s.data.titolo })),
+  },
+  {
+    label: 'Personaggi',
+    href: '/personaggi/',
+    items: personaggi.map((p) => ({ href: `/personaggi/${p.id}`, label: p.data.titolo })),
+  },
+  {
+    label: 'PNG',
+    href: '/png/',
+    items: png.map((p) => ({ href: `/png/${p.id}`, label: p.data.titolo })),
+  },
+  {
+    label: 'Luoghi',
+    href: '/luoghi/',
+    items: luoghi.map((l) => ({ href: `/luoghi/${l.id}`, label: l.data.titolo })),
+  },
+];
+
+const path = Astro.url.pathname;
+const isWithin = (href: string) => path === href || path.startsWith(href);
+---
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="/" class="sidebar-title">La Maledizione di Strahd</a>
+    <button
+      id="sidebar-collapse-toggle"
+      class="sidebar-collapse-btn"
+      type="button"
+      aria-label="Comprimi la barra laterale"
+      title="Comprimi la barra laterale"
+    >
+      &laquo;
+    </button>
+  </div>
+  <nav class="sidebar-nav" aria-label="Navigazione principale">
+    <a href="/riassunto/" class:list={['sidebar-link', { active: isWithin('/riassunto/') }]}>Riassunto</a>
+    {sections.map((section, i) => {
+      const expanded = isWithin(section.href);
+      return (
+        <div class="sidebar-section">
+          <div class="sidebar-section-header">
+            <a href={section.href} class:list={['sidebar-link', { active: path === section.href }]}>
+              {section.label}
+            </a>
+            <button
+              type="button"
+              class="sidebar-chevron"
+              aria-expanded={expanded ? 'true' : 'false'}
+              aria-controls={`sidebar-section-${i}`}
+              aria-label={`Mostra elenco ${section.label}`}
+              data-sidebar-toggle
+            >
+              &#9656;
+            </button>
+          </div>
+          <ul id={`sidebar-section-${i}`} class="sidebar-sublist" hidden={!expanded}>
+            {section.items.map((item) => (
+              <li>
+                <a href={item.href} class:list={['sidebar-sublink', { active: path === item.href || path === `${item.href}/` }]}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
+  </nav>
+</aside>
+
+<script>
+  for (const btn of document.querySelectorAll<HTMLButtonElement>('[data-sidebar-toggle]')) {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      const list = document.getElementById(btn.getAttribute('aria-controls') ?? '');
+      list?.toggleAttribute('hidden', expanded);
+    });
+  }
+</script>

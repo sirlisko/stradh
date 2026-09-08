@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+
+export async function getStaticPaths() {
+  const png = await getCollection('png');
+  return png.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const meta = [entry.data.ruolo, entry.data.luogo, entry.data.fazione].filter(Boolean).join(' · ');
+---
+<EntryLayout
+  titolo={entry.data.titolo}
+  meta={meta}
+  stato={entry.data.stato}
+  tag={entry.data.tag}
+  backlinksUrl={`/png/${entry.id}`}
+>
+  <Content />
+</EntryLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CardGrid from '../../components/CardGrid.astro';
+import Card from '../../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
+---
+<BaseLayout title="Diario">
+  <h1 class="page-title">Diario delle sessioni</h1>
+  <p class="page-lede">Il resoconto di ogni serata di gioco, dalla più recente.</p>
+  <CardGrid>
+    {sessioni.map((s) => (
+      <Card
+        href={`/diario/${s.id}`}
+        titolo={s.data.titolo}
+        estratto={s.data.estratto}
+        meta={`Sessione ${s.data.numero} · ${s.data.data.toLocaleDateString('it-IT')}`}
+      />
+    ))}
+  </CardGrid>
+</BaseLayout>

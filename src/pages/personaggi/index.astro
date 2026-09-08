@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CardGrid from '../../components/CardGrid.astro';
+import Card from '../../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const personaggi = (await getCollection('personaggi')).sort((a, b) =>
+  a.data.titolo.localeCompare(b.data.titolo)
+);
+---
+<BaseLayout title="Personaggi">
+  <h1 class="page-title">Personaggi</h1>
+  <p class="page-lede">Gli avventurieri del gruppo.</p>
+  <CardGrid>
+    {personaggi.map((p) => (
+      <Card
+        href={`/personaggi/${p.id}`}
+        titolo={p.data.titolo}
+        estratto={p.data.estratto}
+        meta={[p.data.classe, p.data.giocatore && `Giocatore: ${p.data.giocatore}`].filter(Boolean).join(' · ')}
+        stato={p.data.stato}
+      />
+    ))}
+  </CardGrid>
+</BaseLayout>

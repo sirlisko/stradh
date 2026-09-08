@@ -1,0 +1,31 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Backlinks from '../components/Backlinks.astro';
+
+interface Props {
+  titolo: string;
+  meta?: string;
+  stato?: string;
+  tag?: string[];
+  backlinksUrl: string;
+}
+const { titolo, meta, stato, tag = [], backlinksUrl } = Astro.props;
+---
+<BaseLayout title={titolo}>
+  <article>
+    <header class="entry-header">
+      <h1 class="page-title">{titolo}</h1>
+      {meta && <p class="entry-meta">{meta}</p>}
+      {(stato || tag.length > 0) && (
+        <div class="badge-row">
+          {stato && <span class={`badge badge-${stato}`}>{stato}</span>}
+          {tag.map((t) => <span class="badge">{t}</span>)}
+        </div>
+      )}
+    </header>
+    <div class="entry-content">
+      <slot />
+    </div>
+    <Backlinks url={backlinksUrl} />
+  </article>
+</BaseLayout>

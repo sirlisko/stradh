@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+
+export async function getStaticPaths() {
+  const sessioni = await getCollection('sessions');
+  return sessioni.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<EntryLayout
+  titolo={entry.data.titolo}
+  meta={`Sessione ${entry.data.numero} · ${entry.data.data.toLocaleDateString('it-IT')}`}
+  tag={entry.data.tag}
+  backlinksUrl={`/diario/${entry.id}`}
+>
+  <Content />
+</EntryLayout>
