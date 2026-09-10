@@ -569,3 +569,45 @@ main {
   font-family: var(--font-heading);
   font-size: 1rem;
 }
+
+.session-status {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  margin: 2.5rem auto 0;
+  max-width: 640px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.session-status-item {
+  flex: 1 1 240px;
+  background: var(--color-bg-elevated);
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.session-status-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-bright);
+  margin-bottom: 0.4rem;
+}
+
+.session-status-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a.session-status-value:hover {
+  color: var(--color-accent-bright);
+}

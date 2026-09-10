@@ -16,15 +16,53 @@ const ultima = sessioni[0];
     </p>
   </div>
 
-  {ultima && (
-    <p class="callout">
-      Ultima sessione: <a href={`/diario/${ultima.id}`}>{ultima.data.titolo}</a>
-    </p>
-  )}
+  <div class="session-status">
+    {ultima && (
+      <div class="session-status-item">
+        <span class="session-status-label">Ultima sessione</span>
+        <a class="session-status-value" href={`/diario/${ultima.id}`}>{ultima.data.titolo}</a>
+      </div>
+    )}
+    <div class="session-status-item" id="prossima-sessione" hidden>
+      <span class="session-status-label">Prossima sessione</span>
+      <span class="session-status-value" id="prossima-sessione-value"></span>
+    </div>
+  </div>
+
+  <script>
+    const endpoint = 'https://cms.sirlisko.com/items/stradh';
+    const item = document.getElementById('prossima-sessione');
+    const valueEl = document.getElementById('prossima-sessione-value');
+
+    fetch(endpoint)
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then(({ data }) => {
+        if (!data?.next_session || !item || !valueEl) return;
+        const dataSessione = new Date(data.next_session);
+        if (Number.isNaN(dataSessione.getTime())) return;
+        if (dataSessione.getTime() < Date.now()) return; // sessione già passata
+
+        const giorno = dataSessione.toLocaleDateString('it-IT', {
+          weekday: 'long',
+          day: 'numeric',
+          month: 'long',
+        });
+        const ora = dataSessione.toLocaleTimeString('it-IT', {
+          hour: '2-digit',
+          minute: '2-digit',
+        });
+
+        valueEl.textContent = `${giorno} alle ${ora}`;
+        item.hidden = false;
+      })
+      .catch(() => {
+        // CMS non raggiungibile: nessuna sessione mostrata.
+      });
+  </script>
 
   <nav class="card-grid hero-nav">
-    <a class="card" href="/diario/"><h3>Diario</h3><p>Il resoconto di ogni sessione giocata.</p></a>
     <a class="card" href="/riassunto/"><h3>Riassunto</h3><p>La storia della campagna fin qui, in breve.</p></a>
+    <a class="card" href="/diario/"><h3>Diario</h3><p>Il resoconto di ogni sessione giocata.</p></a>
     <a class="card" href="/personaggi/"><h3>Personaggi</h3><p>Gli eroi (o sciagurati) del gruppo.</p></a>
     <a class="card" href="/png/"><h3>PNG</h3><p>Alleati, nemici e comparse di Barovia.</p></a>
     <a class="card" href="/luoghi/"><h3>Luoghi</h3><p>Villaggi, castelli e luoghi maledetti.</p></a>
