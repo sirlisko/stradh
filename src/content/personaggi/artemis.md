@@ -2,7 +2,7 @@
 titolo: Artemis
 stato: vivo
 estratto: Infiltratore del gruppo, abile nel furtivo e nell'invisibilità.
-tag: [furtivo]
+tag: [Rogue]
 ---
 
 Membro del gruppo fin dallo scontro con la banda di fratelli fuori da

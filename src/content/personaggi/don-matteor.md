@@ -3,7 +3,7 @@ titolo: Don Matteor
 classe: Chierico
 stato: vivo
 estratto: Mastro chierico del gruppo, sensibile alla magia e alle auree di morte/malvagità.
-tag: [chierico, oratore, bandito da Vallaki]
+tag: [Cleric]
 ---
 
 Fu lui, all'inizio della campagna, a notare su tutti i cadaveri dei banditi

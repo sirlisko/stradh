@@ -2,7 +2,7 @@
 titolo: Erieth
 stato: vivo
 estratto: Legato a un misterioso patrono a cui riferisce tramite un rituale di sangue; esegue i suoi ordini senza fare domande.
-tag: [patto, assassino]
+tag: [warlock]
 ---
 
 Ha un patrono a cui riferisce regolarmente tramite un rituale (si taglia la
@@ -34,6 +34,3 @@ conoscesse un certo "Polov", senza risultato. Riflettendo sulla lettera
 mai aperta di Strahd, ha iniziato a dubitare che il vampiro sia davvero il
 loro nemico principale, viste le azioni ben peggiori a cui ha assistito a
 [[Vallaki]].
-
-Nota: in alcuni appunti compare come "Eriet" — probabile refuso, il nome
-usato costantemente è Erieth.

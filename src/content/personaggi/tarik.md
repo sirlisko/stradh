@@ -1,8 +1,8 @@
 ---
-titolo: Tarik
+titolo: Tarik Cornelius
 stato: vivo
 estratto: Studioso di magia con un gufo famiglio, esperto nell'identificare oggetti magici.
-tag: [arcano]
+tag: [Wizard]
 ---
 
 Ha un gufo come famiglio, usato per la ricognizione a distanza (telepatico
