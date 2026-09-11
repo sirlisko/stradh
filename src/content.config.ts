@@ -47,6 +47,7 @@ const luoghi = defineCollection({
     ...baseFields,
     tipo: z.string().optional(),
     regione: z.string().optional(),
+    visitato: z.boolean().default(false),
   }),
 });
 

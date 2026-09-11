@@ -22,9 +22,10 @@ Quando l'utente incolla la trascrizione di una sessione:
    ometterli, se lo schema li richiede).
 
 3. Per entità ESISTENTI menzionate di nuovo, aggiorna il loro file se lo
-   stato è cambiato (es. `stato: morto` per un PNG appena ucciso) e/o
-   aggiungi un paragrafo che racconta il nuovo sviluppo — non riscrivere la
-   cronologia precedente.
+   stato è cambiato (es. `stato: morto` per un PNG appena ucciso, oppure
+   `visitato: true` per un luogo raggiunto per la prima volta dal gruppo)
+   e/o aggiungi un paragrafo che racconta il nuovo sviluppo — non
+   riscrivere la cronologia precedente.
 
 4. Collega SEMPRE le entità con wikilink in stile Obsidian: `[[Nome Entità]]`
    per il testo semplice, `[[Nome Entità|testo visualizzato]]` per un alias
@@ -70,3 +71,10 @@ Quando l'utente incolla la trascrizione di una sessione:
   server dopo aver aggiunto nuove entità risolve il problema.
 - La cartella `src/content/` può essere aperta direttamente come vault
   Obsidian per navigare graficamente i collegamenti.
+- La pagina `/mappa` (`src/pages/mappa.astro`) mostra uno schizzo di viaggio
+  con i luoghi "di punta" di Barovia (non le tappe interne a un
+  insediamento, es. le botteghe di Vallaki). Le coordinate dei pin sono
+  scelte a mano nell'array `nodi` del file — un nuovo luogo importante va
+  aggiunto lì manualmente (con eventuale strada in `stradePercorse` o
+  `stradeConosciute`), altrimenti resta nella lista `/luoghi/` ma non
+  compare sulla mappa.

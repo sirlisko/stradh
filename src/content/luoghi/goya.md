@@ -2,6 +2,7 @@
 titolo: Goya
 tipo: città
 regione: Morgren
+visitato: true
 estratto: Città natale del gruppo, capitale del regno omonimo, a nord del continente di Morgren tra la costa e la catena dei Monti Goyaman.
 ---
 

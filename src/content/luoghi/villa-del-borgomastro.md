@@ -2,6 +2,7 @@
 titolo: Villa del Borgomastro
 tipo: villa
 regione: Barovia
+visitato: true
 estratto: Residenza di Barone Vargas a Vallaki, con almeno due oggetti magici al piano superiore, tra cui uno specchio che evoca un assassino spettrale.
 ---
 

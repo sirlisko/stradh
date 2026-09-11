@@ -21,9 +21,7 @@ const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
     <h1 class="page-title">La Maledizione di Strahd</h1>
     <div class="ornament" aria-hidden="true">❖</div>
     <p>
-      Diario della campagna: sessioni giocate, personaggi, PNG incontrati e i
-      luoghi oscuri di Barovia. Tutte le pagine sono collegate tra loro — segui
-      i link per esplorare la storia.
+      Diario della campagna: sessioni giocate, personaggi, PNG incontrati e i luoghi di Barovia.
     </p>
   </div>
 
@@ -63,7 +61,7 @@ const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
           minute: '2-digit',
         });
 
-        valueEl.textContent = `${giorno} alle ${ora}`;
+        valueEl.innerHTML = `${giorno}<br/>alle ${ora}`;
         item.hidden = false;
       })
       .catch(() => {
@@ -88,5 +86,6 @@ const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
     <a class="card" href="/personaggi/"><h3>Personaggi</h3><p>Gli eroi (o sciagurati) del gruppo.</p></a>
     <a class="card" href="/png/"><h3>PNG</h3><p>Alleati, nemici e comparse di Barovia.</p></a>
     <a class="card" href="/luoghi/"><h3>Luoghi</h3><p>Villaggi, castelli e luoghi maledetti.</p></a>
+    <a class="card" href="/cronologia/"><h3>Cronologia</h3><p>La storia della campagna in ordine, sessione dopo sessione.</p></a>
   </nav>
 </BaseLayout>

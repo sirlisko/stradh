@@ -47,6 +47,7 @@ const isWithin = (href: string) => path === href || path.startsWith(href);
   </div>
   <nav class="sidebar-nav" aria-label="Navigazione principale">
     <a href="/riassunto/" class:list={['sidebar-link', { active: isWithin('/riassunto/') }]}>Riassunto</a>
+    <a href="/cronologia/" class:list={['sidebar-link', { active: isWithin('/cronologia/') }]}>Cronologia</a>
     {sections.map((section, i) => {
       const expanded = isWithin(section.href);
       return (

@@ -2,6 +2,7 @@
 titolo: Castello Ravenloft
 tipo: castello
 regione: Barovia
+visitato: false
 estratto: Il castello di Strahd von Zarovich, meta della processione di spettri vista al Villaggio di Barovia.
 ---
 

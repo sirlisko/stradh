@@ -2,6 +2,7 @@
 titolo: Chiesa di Vallaki
 tipo: chiesa
 regione: Barovia
+visitato: true
 estratto: Chiesa di Padre Lucian Petrovich, rifugio di Ismark e Ireena, teatro dell'assassinio del prete.
 ---
 

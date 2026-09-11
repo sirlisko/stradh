@@ -2,6 +2,7 @@
 titolo: Villaggio di Barovia
 tipo: villaggio
 regione: Barovia
+visitato: true
 estratto: Il primo insediamento incontrato entrando nella valle, tra case sbarrate e un cielo perennemente coperto, all'ombra del Castello Ravenloft.
 ---
 

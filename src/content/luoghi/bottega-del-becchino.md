@@ -2,6 +2,7 @@
 titolo: Bottega del Becchino
 tipo: bottega
 regione: Barovia
+visitato: true
 estratto: Bottega di Van der Vort a Vallaki, dove il gruppo ha trovato le reliquie rubate, una commissione sospetta e delle statuette misteriose.
 ---
 

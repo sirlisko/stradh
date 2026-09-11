@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const sessioni = (await getCollection('sessions')).sort((a, b) => a.data.numero - b.data.numero);
+---
+<BaseLayout title="Cronologia">
+  <h1 class="page-title">Cronologia</h1>
+  <p class="page-lede">La storia della campagna in ordine, sessione dopo sessione.</p>
+
+  <ol class="timeline">
+    {sessioni.map((s) => (
+      <li class="timeline-item">
+        <span class="timeline-marker" aria-hidden="true"></span>
+        <div class="timeline-body">
+          <span class="timeline-meta">Sessione {s.data.numero} · {s.data.data.toLocaleDateString('it-IT')}</span>
+          <a class="timeline-title" href={`/diario/${s.id}`}>{s.data.titolo}</a>
+          {s.data.estratto && <p class="timeline-estratto">{s.data.estratto}</p>}
+        </div>
+      </li>
+    ))}
+  </ol>
+</BaseLayout>
