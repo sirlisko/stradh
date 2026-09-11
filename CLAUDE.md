@@ -34,7 +34,12 @@ Quando l'utente incolla la trascrizione di una sessione:
 
 5. Se non sei sicuro se un'entità esiste già, cerca nei file esistenti prima
    di crearne uno duplicato (nomi con leggere varianti ortografiche vanno
-   uniformati a UN file canonico).
+   uniformati a UN file canonico). Per verificare la grafia corretta di un
+   nome canonico o chiarire un dettaglio ambiguo della trascrizione, usa
+   come riferimento https://5e.tools/adventure.html#cos (il modulo
+   ufficiale di Curse of Strahd). Non copiare da lì contenuti che i
+   personaggi non hanno ancora scoperto in gioco (colpi di scena, identità
+   segrete, sviluppi futuri) — il sito è letto dai giocatori stessi.
 
 6. Aggiorna eventualmente `src/content/riassunto/overview.md` se la sessione
    ha cambiato in modo significativo lo stato generale della campagna (es.
