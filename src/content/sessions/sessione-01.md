@@ -1,62 +1,42 @@
 ---
-titolo: Arrivo a Vallaki e la lettera di Strahd
+titolo: L'agguato a casa del padre di Artemis
 numero: 1
-data: 2026-05-20
-estratto: Il gruppo consegna (in parte) il carico del Wizard of Wines a Urwin, riceve un invito a cena da Strahd e pianifica l'infiltrazione nella villa del borgomastro.
-luoghiVisitati: [Vallaki]
+data: 2026-03-25
+estratto: A Goya la vendetta di alcuni lestofanti contro Artemis ricade sul padre; Erieth, in missione per il suo patrono, si ritrova a difendere la casa insieme a Tarik e Don Matteor.
+luoghiVisitati: [Goya]
+tag: [inizio della campagna]
 ---
 
-## Arrivo alla locanda
+## Goya
 
-Il gruppo arriva a [[Vallaki]] con il carro del [[Wizard of Wines]],
-accompagnato da uno stormo di corvi. [[Artemis]] entra trionfalmente in
-piedi sulle botti. Prima di entrare nella locanda si discute animatamente
-sulla spartizione del carico.
+La campagna si apre a [[Goya]], città nel nord del continente di Morgren,
+situata tra la costa e la catena montuosa dei Monti Goyaman, capitale
+dell'omonimo regno.
 
-## Trattativa con Urwin
+## La vendetta dei lestofanti
 
-[[Erieth]] entra nella locanda e parla privatamente con [[Urwin]]: si
-raggiunge un accordo per cui il gruppo cede apparentemente l'intero
-carico, ma in realtà trattiene una botte e mezza e delle bottiglie. Le
-botti vuote vengono ricaricate sul carro per mantenere le apparenze, e il
-carro viene nascosto nella stalla/colombaia di Urwin, sorvegliata dai
-corvi.
+[[Artemis]] si attira l'odio di alcuni lestofanti cittadini, che si
+vendicano rivolgendosi contro il [[Padre di Artemis (nome
+sconosciuto)|padre]] anziano.
 
-Urwin fornisce informazioni preziose su [[Rictavio]] e il suo carro chiuso
-(simile a quelli dei Vistani, sospetto), sulla [[Torre Abbandonata]] sulla
-strada per il Wizard of Wines — che sembra di nuovo abitata, con un carro
-simile a quello di Rictavio e attività magica rilevata — su [[Izek]], che
-frequenta la bottega del giocattolaio, e su [[Barone Vargas]], descritto
-come un "pallone gonfiato" odiato dalla gente.
+## L'ordine del patrono
 
-## La lettera di Strahd
+Nello stesso momento, il patrono di [[Erieth]] gli ordina di recuperare un
+anello che sta al dito di uno dei lestofanti. Erieth, insieme a [[Tarik]],
+li insegue.
 
-Di ritorno in stanza, il gruppo trova una lettera sigillata con lo stemma
-di [[Strahd von Zarovich]] (corvo rampante + castello): un invito formale
-a cena al [[Castello Ravenloft]], firmato Conte Strahd von Zarovich.
-Nessuna traccia magica rilevata.
+## Lo scontro
 
-## Piano per il giorno dopo
+L'inseguimento porta Erieth e Tarik a casa del padre di Artemis, dove si
+ritrovano a fronteggiare gli aggressori insieme allo stesso Artemis e a
+[[Don Matteor]]. Una volta sconfitti e uccisi i nemici, Erieth scopre che
+il terzo dei tre fratelli banditi — quello che dovrebbe portare l'anello
+ordinatogli dal patrono — non è presente allo scontro.
 
-Il gruppo pianifica la festa del borgomastro: [[Don Matteor]],
-[[Ismark Kolyanovich]] e [[Ireena]] si presenteranno come "scorta
-ufficiale" per tenere impegnato [[Barone Vargas]], mentre Artemis si
-renderà invisibile per infiltrarsi al piano superiore della
-[[Villa del Borgomastro]]. Obiettivo principale: lo specchio delle brame,
-attivabile con la filastrocca "Specchio magico sul muro, evoca la tua
-ombra...". Individuato anche un secondo punto magico non identificato, più
-in alto dello specchio.
+## Il tatuaggio
 
-## Recupero di Ismark e Ireena
-
-Il gruppo raggiunge la [[Chiesa di Vallaki]], dove Ismark e Ireena si sono
-rifugiati: la chiesa è più barricata del solito (porta sbarrata, panca
-incastrata) dopo i tentativi notturni dei vampiri di entrare. Don Matteor
-convince Ismark a partecipare alla festa del giorno dopo come parte del
-piano. Il gruppo fa una donazione di 5 monete d'oro a
-[[Padre Lucian Petrovich]] per i rifugiati.
-
-## Fine serata
-
-Cena in locanda (stufato di lupo); Urwin viene incaricato di tenere
-d'occhio la casa del borgomastro durante la notte.
+Esaminando i corpi, Don Matteor nota uno strano tatuaggio sul collo,
+presente su tutti i nemici sconfitti, e ne percepisce un'aura di morte e
+malvagità. Attorno a questo indizio si forma il gruppo: un interesse
+comune nel trovare e uccidere i restanti membri de [[I Fratelli
+Banditi|questa setta legata a forze necromantiche]].

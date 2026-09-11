@@ -5,6 +5,11 @@ estratto: Studioso di magia con un gufo famiglio, esperto nell'identificare ogge
 tag: [Wizard]
 ---
 
+Si unisce a [[Erieth]] nell'inseguimento de [[I Fratelli Banditi|i fratelli
+banditi]] che avevano attaccato il [[Padre di Artemis (nome
+sconosciuto)|padre di Artemis]] a [[Goya]], affrontandoli insieme a Erieth,
+[[Artemis]] e [[Don Matteor]] nello scontro che dà origine al gruppo.
+
 Ha un gufo come famiglio, usato per la ricognizione a distanza (telepatico
 entro 30 piedi) — è servito a individuare le stanze della [[Villa del
 Borgomastro]] e a fare da vedetta durante l'infiltrazione.

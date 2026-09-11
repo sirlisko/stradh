@@ -7,9 +7,11 @@ estratto: Figlio di Kolyan Indirovich, ha chiesto al gruppo di scortare sua sore
 ---
 
 Incontrato dal gruppo in locanda al [[Villaggio di Barovia]], subito dopo
-la morte di suo padre [[Kolyan Indirovich]]. Ha chiesto al gruppo di
-scortare la sorella [[Ireena]] a [[Vallaki]], offrendo in cambio la sua
-spada.
+la morte di suo padre [[Kolyan Indirovich]]. Rivela al gruppo che da queste
+terre non si può uscire, per via di una nebbia velenosa che le circonda, e
+parla per la prima volta di un'entità maligna che domina Barovia, che
+chiama "il diavolo Strahd". Ha chiesto al gruppo di scortare la sorella
+[[Ireena]] a [[Vallaki]], offrendo in cambio la sua spada.
 
 A Vallaki si rifugia con Ireena nella [[Chiesa di Vallaki]], sempre più
 barricata dopo i tentativi notturni dei vampiri di entrare. Convinto da

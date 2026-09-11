@@ -1,55 +1,35 @@
 ---
-titolo: Indagini a Vallaki e la morte di Padre Lucian Petrovich
+titolo: L'imboscata al casolare
 numero: 2
-data: 2026-05-27
-estratto: Il gruppo si divide tra la villa del borgomastro e la bottega del becchino; Erieth assassina il prete di Vallaki su ordine del suo patrono.
-luoghiVisitati: [Vallaki]
+data: 2026-04-01
+estratto: Le indagini nelle locande di Goya portano il gruppo a un casolare di campagna, dove tende un'imboscata a un gruppo de I Fratelli Banditi.
+luoghiVisitati: [Goya, Casolare fuori Goya]
 ---
 
-## Mattina a Vallaki
+## Indagini in città
 
-Prima di dividersi in due squadre, [[Erieth]] riferisce di aver visto un
-bagliore viola dall'ultimo piano della [[Villa del Borgomastro]] durante la
-sua veglia notturna, e uno stormo di pipistrelli aveva sbattuto contro le
-finestre della [[Locanda di Urwin]]. [[Urwin]] conferma che anche i corvi
-hanno notato il bagliore.
+Dopo qualche indagine nelle locande di [[Goya]], il gruppo scopre che
+alcuni membri de [[I Fratelli Banditi|la setta]] sono stati visti entrare
+in un casolare nelle campagne fuori città.
 
-## Delegazione al Borgomastro
+## L'imboscata
 
-[[Don Matteor]], [[Ismark Kolyanovich]], [[Ireena]] e [[Tarik]] portano un
-regalo (un barilotto di spirito e delle bottiglie di vino riconfezionate)
-e vengono ricevuti nello studio di [[Barone Vargas]]. Ismark recita bene la
-parte del Borgomastro di Barovia in visita ufficiale. La nota più
-inquietante è [[Izek]], il capitano delle guardie, che si fissa
-ossessivamente su Ireena e tenta di portarla a vedere "il suo alloggio". La
-situazione degenera leggermente ma il gruppo riesce a cavarsela. Don Matteor,
-con Detect Magic, conferma che le due aure magiche sono ancora nelle stesse
-posizioni nell'edificio. Il gufo di [[Tarik]] sbircia dalle finestre e
-individua la stanza delle guardie, la cucina, la camera del Borgomastro e
-uno stanzino polveroso al piano più alto.
+Senza dare troppo nell'occhio, il gruppo si dirige verso il [[Casolare
+fuori Goya|casolare]] indicato e, con uno stratagemma, coglie di sorpresa
+il nemico attirandolo fuori dalla casa.
 
-## Casa del becchino Van der Vort
+## Il bagliore viola
 
-[[Erieth]] e [[Artemis]] trovano la [[Bottega del Becchino]] vuota e la
-ispezionano. Rinvengono una commissione scritta con elegante calligrafia,
-firmata [[P. (identità sconosciuta)|"P."]], che ordina bare con terra dentro — probabile contrabbando
-legato ai vampiri. Trovano anche una statuetta contenente un liquido
-medicinale misterioso (ancora da identificare) e 50 monete d'oro sotto il
-letto.
+Durante il combattimento, un forte bagliore viola traspare dalle finestre
+di una delle stanze interne. Il gruppo riesce comunque a sbaragliare il
+nemico.
 
-## Assassinio di Padre Lucian Petrovich
+## Dopo la battaglia
 
-Erieth, seguendo gli ordini del suo patrono, entra nella
-[[Chiesa di Vallaki]] invisibile durante la messa, lancia Darkness e
-pugnala il prete. [[Padre Lucian Petrovich]] tenta la fuga stringendo le
-reliquie ma viene abbattuto da un Eldritch Blast. Erieth scompare di nuovo
-nell'invisibilità, lasciando il punteruolo rubato dal becchino vicino al
-corpo — incolpando implicitamente [[Van der Vort]]. Il caos che ne segue
-include nuvole nere che oscurano il cielo di Vallaki e i fedeli che urlano
-"il diavolo è tra noi".
+Alla fine dello scontro, [[Erieth]] si accorge che al terzo fratello è
+stato mozzato un dito, e che un membro della setta sembra essere
+scomparso. [[Don Matteor]], esaminando l'aura magica lasciata dal
+bagliore viola, scopre che si tratta di una magia di trasporto.
 
-## Perlustrazione di Artemis
-
-Artemis nota gruppi di individui incappucciati (non forestieri, hanno
-accento locale) che convergono in una casa dei nobili — probabilmente una
-riunione segreta de [[I Veri Nobili di Vallaki|una setta locale]].
+Calato ormai il crepuscolo, il gruppo decide di passare la notte sul
+posto.

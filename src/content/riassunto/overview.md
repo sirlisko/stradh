@@ -2,33 +2,37 @@
 titolo: Riassunto della campagna
 ---
 
-## Le origini, fuori da Barovia
+## Le origini, a Goya
 
-Il patrono di [[Erieth]] gli ordina di recuperare un anello dal dito di uno
-dei banditi di una banda di fratelli. Erieth e Tarik li inseguono e li
-affrontano a casa del padre di [[Artemis]], insieme a lui e a
-[[Don Matteor]]. Il terzo fratello — quello che dovrebbe portare l'anello —
-non è presente allo scontro.
+A [[Goya]], capitale di Morgren, [[Artemis]] si attira l'odio di alcuni
+lestofanti, che si vendicano attaccando suo [[Padre di Artemis (nome
+sconosciuto)|padre]]. Nello stesso momento il patrono di [[Erieth]] gli
+ordina di recuperare un anello dal dito di uno dei fratelli lestofanti:
+Erieth e [[Tarik]] li inseguono e li affrontano a casa del padre di
+Artemis, insieme a lui e a [[Don Matteor]]. Il terzo fratello — quello che
+dovrebbe portare l'anello — non è presente allo scontro.
 
 Don Matteor nota su tutti i cadaveri lo stesso strano tatuaggio sul collo e
 ne percepisce un'aura di morte e malvagità: è il collante che unisce il
-gruppo, dare la caccia ai membri superstiti di questa setta necromantica.
+gruppo, dare la caccia ai membri superstiti de [[I Fratelli Banditi|questa
+setta necromantica]].
 
-Le indagini nelle locande portano a un casolare fuori città. Il gruppo
-attira i nemici all'esterno e li sbaraglia, ma durante il combattimento un
-forte bagliore viola filtra dalle finestre di una stanza interna. A fine
-scontro: al terzo fratello è stato mozzato il dito, un membro della setta
-è sparito, e l'aura magica lasciata dal bagliore viene identificata da Don
-Matteor come magia di trasporto.
+Le indagini nelle locande portano a un [[Casolare fuori Goya|casolare]]
+fuori città. Il gruppo attira i nemici all'esterno e li sbaraglia, ma
+durante il combattimento un forte bagliore viola filtra dalle finestre di
+una stanza interna. A fine scontro: al terzo fratello è stato mozzato il
+dito, un membro della setta è sparito, e l'aura magica lasciata dal
+bagliore viene identificata da Don Matteor come magia di trasporto.
 
 ## L'ingresso a Barovia
 
 Al risveglio la mattina dopo, il casolare è avvolto nella nebbia. Sulla
-strada verso casa il bosco è diverso, più fitto; dopo uno scontro con dei
-lupi il gruppo trova il cadavere di [[Kolyan Indirovich]], Borgomastro del
-[[Villaggio di Barovia]], con un biglietto che sconsiglia ai forestieri di
-entrare in queste terre. Poco oltre, un grande cancello si apre magicamente
-al loro arrivo. Lo attraversano.
+strada verso Goya il bosco è diverso, più fitto; dopo uno scontro con dei
+lupi il gruppo trova un cadavere che, agli occhi di Don Matteor soltanto,
+ha il suo stesso volto. Nella giacca, una lettera firmata
+[[Kolyan Indirovich]], Borgomastro del [[Villaggio di Barovia]], sconsiglia
+ai forestieri di entrare in queste terre. Poco oltre, un grande cancello si
+apre magicamente al loro arrivo. Lo attraversano.
 
 Al villaggio: case sbarrate, cielo perennemente coperto, un lamento per
 strada — è [[Mary]], che ha perso la figlia, tenuta segregata in casa "per
@@ -38,11 +42,11 @@ che su queste terre regna un'entità che chiamano il diavolo,
 [[Strahd von Zarovich]]. Chiede al gruppo di scortare la sorella
 [[Ireena]] a [[Vallaki]], offrendo in cambio la sua spada.
 
-Nella chiesa del villaggio, il [[Prete del Villaggio di Barovia]] tiene
-rinchiuso il figlio nel sotterraneo — da sotto il pavimento arrivano
-lamenti. Racconta di una spedizione organizzata un anno prima da un mago
-venuto da lontano per abbattere Strahd: nessun sopravvissuto tranne suo
-figlio, tornato "cambiato", trasformato in qualcosa di simile a Strahd.
+Nella chiesa del villaggio, [[Padre Donavich]] tiene rinchiuso il figlio
+nel sotterraneo — da sotto il pavimento arrivano lamenti. Racconta di una
+spedizione organizzata un anno prima da un mago venuto da lontano per
+abbattere Strahd: nessun sopravvissuto tranne suo figlio, tornato
+"cambiato", trasformato in qualcosa di simile a Strahd.
 
 Passando la notte a casa del borgomastro morto, il gruppo assiste a una
 processione di spettri — perlopiù guerrieri — che marciano in fila verso
@@ -89,7 +93,8 @@ magiche: una era lo specchio che con una formula può evocare un assassino
 spettrale (mai trovato), l'altra si è rivelata essere lo studio segreto
 in soffitta del [[Figlio di Vargas (nome sconosciuto)|figlio segreto di
 Barone Vargas]], fonte dei bagliori viola visti dall'esterno — la stessa
-magia di trasporto vista all'inizio della campagna fuori Goia. Il ragazzo
+magia di trasporto vista all'inizio della campagna al [[Casolare fuori
+Goya|casolare fuori Goya]]. Il ragazzo
 è stato scoperto, interrogato e la sua morte inscenata da suicidio.
 
 [[I Veri Nobili di Vallaki|Una setta incappucciata]], riconducibile a una
@@ -124,7 +129,8 @@ Durante la festa del Sole Splendente, il gruppo si infiltra nella
 [[Villa del Borgomastro]] alla ricerca dello specchio magico. Non lo
 trova, ma scopre nella soffitta uno studio segreto dove il figlio di
 [[Barone Vargas]] studiava magia proibita — la stessa magia di trasporto
-già vista fuori Goia — insegnatagli in parte da un misterioso nobile
+già vista al [[Casolare fuori Goya|casolare fuori Goya]] — insegnatagli in
+parte da un misterioso nobile
 incappucciato mai identificato. Il gruppo lo interroga e ne inscena il
 suicidio.
 

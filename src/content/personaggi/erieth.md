@@ -8,8 +8,14 @@ tag: [warlock]
 Ha un patrono a cui riferisce regolarmente tramite un rituale (si taglia la
 mano e ne contatta la presenza in un vuoto bianco). Il patrono percepisce
 tutto ciò che Erieth vede e fa, e gli ha ordinato fin dall'inizio della
-campagna di recuperare un anello dal dito di uno dei fratelli banditi
-affrontati fuori da Barovia — missione non ancora conclusa.
+campagna, a [[Goya]], di recuperare un anello dal dito di uno de
+[[I Fratelli Banditi|i fratelli banditi]]. Erieth e [[Tarik]] li inseguono
+fino a casa del [[Padre di Artemis (nome sconosciuto)|padre di Artemis]],
+dove li affrontano insieme ad [[Artemis]] e [[Don Matteor]]; il fratello
+che portava l'anello non era però presente. Rintracciato in seguito in un
+[[Casolare fuori Goya|casolare]] fuori città, gli viene mozzato un dito in
+combattimento ma sparisce nella confusione di un bagliore di magia di
+trasporto — missione rimasta in sospeso.
 
 Su ordine dello stesso patrono, durante la sessione del 27 maggio è entrato
 invisibile nella [[Chiesa di Vallaki]] durante la messa, ha lanciato

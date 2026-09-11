@@ -5,8 +5,11 @@ estratto: Infiltratore del gruppo, abile nel furtivo e nell'invisibilità.
 tag: [Rogue]
 ---
 
-Membro del gruppo fin dallo scontro con la banda di fratelli fuori da
-Barovia (a casa di suo padre). Specializzato in infiltrazione: si è reso
+Origine del gruppo: attira l'odio de [[I Fratelli Banditi|alcuni
+lestofanti]] a [[Goya]], che si vendicano attaccando suo padre; Artemis
+difende la casa insieme al [[Padre di Artemis (nome sconosciuto)|padre]],
+[[Erieth]], [[Tarik]] e [[Don Matteor]], dando così inizio al gruppo.
+Specializzato in infiltrazione: si è reso
 invisibile per esplorare la [[Villa del Borgomastro]] dall'esterno, ha
 seguito gli incappucciati de [[I Veri Nobili di Vallaki]] fino al loro
 covo, e ha ispezionato con [[Erieth]] la [[Bottega del Becchino]] dove hanno

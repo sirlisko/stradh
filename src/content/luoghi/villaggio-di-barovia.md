@@ -20,6 +20,6 @@ In locanda il gruppo incontra [[Ismark Kolyanovich]], figlio del
 borgomastro, che chiede di scortare la sorella [[Ireena]] a [[Vallaki]] —
 da Barovia non si esce, la nebbia oltre i confini è velenosa.
 
-Nella chiesa del villaggio, il [[Prete del Villaggio di Barovia]] tiene
+Nella chiesa del villaggio, [[Padre Donavich]] tiene
 rinchiuso nel sotterraneo il figlio, tornato "cambiato" da una spedizione
 fallita contro [[Strahd von Zarovich]].

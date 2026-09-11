@@ -9,8 +9,9 @@ Residenza di [[Barone Vargas]] a [[Vallaki]]. Dall'esterno [[Don Matteor]]
 ha rilevato oggetti magici dal secondo piano in su, tra cui uno specchio
 che con una formula ("Specchio magico sul muro, evoca la tua ombra...")
 può evocare un assassino spettrale. Da lì provengono bagliori viola dello
-stesso colore visti fuori Barovia all'inizio della campagna — notati sia
-da [[Urwin]] che dai corvi del suo clan.
+stesso colore visti al [[Casolare fuori Goya|casolare fuori Goya]]
+all'inizio della campagna — notati sia da [[Urwin]] che dai corvi del suo
+clan.
 
 Il gruppo vi si presenta ufficialmente per la festa del Borgomastro: sul
 retro sorvegliano solo due guardie all'ingresso, nessuna ronda esterna.
@@ -33,7 +34,8 @@ specchio (la cui posizione resta ignota). Nello studio, difeso da tre
 scheletri di gatto animati, ci sono pergamene con diagrammi di cerchi di
 teletrasporto: la stessa magia, secondo il gruppo, usata da un misterioso
 nobile incappucciato che aveva insegnato (in parte) al ragazzo, e forse
-collegata al bagliore viola visto all'inizio della campagna fuori Goia.
+collegata al bagliore viola visto all'inizio della campagna al
+[[Casolare fuori Goya|casolare fuori Goya]].
 Il gruppo cattura e interroga il ragazzo, poi ne inscena il suicidio
 impiccandolo a una trave, prima di calarsi dalla finestra e fuggire.
 

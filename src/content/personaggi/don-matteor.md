@@ -6,10 +6,15 @@ estratto: Mastro chierico del gruppo, sensibile alla magia e alle auree di morte
 tag: [Cleric]
 ---
 
-Fu lui, all'inizio della campagna, a notare su tutti i cadaveri dei banditi
-lo stesso tatuaggio sul collo e a percepirne un'aura di morte e malvagità —
-la scoperta che ha dato al gruppo la propria missione: dare la caccia ai
-superstiti della setta necromantica.
+Fu lui, all'inizio della campagna a [[Goya]], a notare su tutti i cadaveri
+de [[I Fratelli Banditi|i banditi]] lo stesso tatuaggio sul collo e a
+percepirne un'aura di morte e malvagità — la scoperta che ha dato al
+gruppo la propria missione: dare la caccia ai superstiti della setta
+necromantica.
+
+Nella nebbia fuori Goya, esaminando il cadavere di [[Kolyan Indirovich]],
+ha avuto una visione inquietante: il corpo aveva il suo stesso volto, un
+dettaglio che nessun altro del gruppo ha percepito.
 
 A [[Vallaki]] ha offerto aiuto a [[Mary]], usa spesso Detect Magic per
 individuare oggetti magici (ha confermato dall'esterno le due aure
