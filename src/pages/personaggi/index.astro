@@ -19,6 +19,7 @@ const personaggi = (await getCollection('personaggi')).sort((a, b) =>
         estratto={p.data.estratto}
         meta={[p.data.classe, p.data.giocatore && `Giocatore: ${p.data.giocatore}`].filter(Boolean).join(' · ')}
         stato={p.data.stato}
+        immagine={p.data.immagine}
       />
     ))}
   </CardGrid>

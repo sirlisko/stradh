@@ -5,10 +5,12 @@ interface Props {
   estratto?: string;
   meta?: string;
   stato?: string;
+  immagine?: string;
 }
-const { href, titolo, estratto, meta, stato } = Astro.props;
+const { href, titolo, estratto, meta, stato, immagine } = Astro.props;
 ---
 <a class="card" href={href}>
+  {immagine && <img class="card-image" src={immagine} alt="" loading="lazy" />}
   <h3>{titolo}</h3>
   {meta && <p class="entry-meta">{meta}</p>}
   {estratto && <p>{estratto}</p>}

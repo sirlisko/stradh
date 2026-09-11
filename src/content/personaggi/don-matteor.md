@@ -3,6 +3,7 @@ titolo: Don Matteor
 classe: Chierico
 stato: vivo
 estratto: Mastro chierico del gruppo, sensibile alla magia e alle auree di morte/malvagità.
+immagine: /images/personaggi/don-matteor.png
 tag: [Cleric]
 ---
 
