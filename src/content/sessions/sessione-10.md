@@ -2,126 +2,125 @@
 titolo: Il figlio del Borgomastro e la fuga da Vallaki
 numero: 10
 data: 2026-08-20
-estratto: Il gruppo scopre chi si nascondeva nello studio segreto della villa, Don Matteor salva la situazione in piazza a caro prezzo, e la compagnia lascia Vallaki diretta verso i Vistani.
+estratto: Il gruppo scopre chi si nascondeva nello studio segreto della villa, Don Matteor paga a caro prezzo la propria clemenza in piazza, e la compagnia lascia Vallaki diretta verso i Vistani.
 luoghiVisitati: [Vallaki]
 tag: [colpo di scena]
 ---
 
-## Lo studio segreto
+## Il cerchio impossibile
 
-Entrati nello studio ricavato nella soffitta della [[Villa del
-Borgomastro]], il gruppo viene attaccato da tre scheletri di gatto animati
-che si nascondevano tra le cianfrusaglie — [[Artemis]] e [[Erieth]] li
-abbattono rapidamente (uno colpito da un Mind Sliver che gli sbriciola
-letteralmente il cranio).
+Nello studio segreto della soffitta, il gruppo esamina il tappeto
+impolverato: sotto c'è un secondo cerchio di teletrasporto disegnato
+peggio di quelli sulle pergamene, un evidente tentativo di replicarlo
+senza successo. [[Tarik]] lo riconosce e spiega agli altri come
+funzionano questi sigilli: una combinazione univoca di rune collega due
+punti fissi, ma un cerchio "usa e getta" come questo scompare dopo un
+solo utilizzo — solo quelli permanenti, in luoghi come templi, restano
+attivi. Le macchie scure sparse intorno al cerchio, ripulite alla meno
+peggio, non rivelano nessun pattern riconoscibile.
 
-Rovistando trovano un baule con stoffe e una tunica da mago a metà
-lavorazione, e nel cassetto di una scrivania un grimorio pieno di
-incantesimi fino al quinto livello — un livello di potere sorprendente,
-che fa pensare che chiunque lo abbia posseduto in origine fosse un
-incantatore di almeno decimo livello. Sotto un tappeto impolverato trovano
-anche un secondo cerchio di teletrasporto, disegnato peggio di quelli
-sulle pergamene — un tentativo di replicare l'incantesimo, mal riuscito.
+Persa la speranza di completarlo o di scoprire dove porti senza un codice
+di destinazione noto, l'attenzione si sposta sui tre "bambini" fermi
+nell'angolo. [[Erieth]] ne decapita uno con un tocco della sua lama e poi
+un Eldritch Blast: la testa rimbalza contro il muro, confermando che si
+tratta di manichini di legno intagliato vestiti da scolari, non persone
+vere.
 
-Non avendo la certezza che l'incantesimo di teletrasporto sentito poco
-prima sia andato a segno, il gruppo teme che il lanciatore sia ancora
-nella stanza, invisibile. Erieth e Artemis lanciano Fatuo Fuoco su tutta la
-sala: si illuminano mobili e scheletri, e anche i tre "bambini" nell'angolo
-— rivelandosi manichini di legno intagliato vestiti da scolari, non
-persone vere (Artemis ne decapita uno per curiosità macabra, confermando
-che si tratta solo di legno). Nessuna persona invisibile viene illuminata.
+## L'interrogatorio
 
-Sospettando che l'incantatore sia comunque acquattato vicino alla porta,
-Erieth finge di vederlo e sferra un colpo alla cieca: colpisce qualcosa di
-invisibile. Un secondo colpo lo costringe a rivelarsi: un giovane,
-terrorizzato.
-
-## Il figlio del Borgomastro
-
-Dagli anelli che porta — incluso uno con lo stemma della casata
-Vallakovic — e dalla somiglianza del volto, il gruppo riconosce in lui il
-figlio segreto di [[Barone Vargas]]. Sotto interrogatorio (guidato da
-Artemis, con Erieth a fargli da spalla) racconta di aver trovato il
-grimorio nella biblioteca del padre e di essersi messo a studiare da
-autodidatta. Alcune sere prima, un nobile incappucciato sconosciuto si era
-presentato alla villa — fatto entrare dalla serva Gertrude, che nessuno
-aveva più controllato — ed era riuscito a raggiungere la soffitta senza
-che nessuno gli mostrasse la strada. Il misterioso visitatore gli aveva
-promesso di insegnargli la magia in cambio di componenti (gessetti e
-inchiostri rari infusi con gemme, per un valore di 50 monete d'oro, oltre
-a componenti di pipistrello); aveva lanciato lui stesso, con successo,
-l'incantesimo di teletrasporto — la fonte del bagliore viola notato più
-volte dall'esterno — per poi sparire senza finire di insegnargli nulla. I
-tentativi successivi del ragazzo di replicare l'incantesimo da solo sono
-costati la vita a due servitori di casa, tra cui probabilmente
-[[Gertrude]] stessa.
+Con un coltello alla gola, [[Artemis]] interroga il giovane legato — il
+[[Figlio di Vargas (nome sconosciuto)|figlio segreto di Barone Vargas]].
+Tra minacce e qualche schiaffo, l'incalzare di Artemis (in Draconico, per
+tenere all'oscuro [[Don Matteor]] presente) ottiene la storia completa:
+non è mai riuscito a far funzionare l'incantesimo da solo, ha trovato il
+grimorio nella biblioteca del padre senza sapere come ci fosse finito, e
+qualche sera prima un nobile incappucciato sconosciuto si è presentato
+alla villa. Fatto entrare dalla serva [[Gertrude]] senza che nessuno lo
+controllasse più, l'incappucciato ha raggiunto la soffitta senza che
+nessuno gli mostrasse la strada — segno che sapeva già dove andare.
+Gli ha chiesto in cambio del proprio aiuto magico solo dei componenti:
+gessetti e inchiostri rari infusi con gemme preziose (valore 50 monete
+d'oro) e ali di pipistrello. Con quei componenti, senza disegnare alcun
+cerchio a terra, l'incappucciato ha attivato l'incantesimo a mani nude —
+la fonte del bagliore viola notato più volte dall'esterno — per poi
+sparire senza insegnargli altro.
 
 Interrogato su un certo "Polov" e sulla gente incappucciata vista in
-città, il ragazzo nega di sapere alcunché, ma il gruppo nota che mente
-quando gli si chiede della gente col cappuccio.
+città, il ragazzo nega tutto, ma Artemis nota che abbassa lo sguardo
+proprio quando gli si chiede dei cappucci — segno che mente. Ammette
+invece, con riluttanza, che i suoi tentativi falliti di ripetere
+l'incantesimo sono costati la vita a due servitori di casa, tra cui
+probabilmente [[Gertrude]] stessa, e che è stato suo padre a trovarlo lì
+dentro dopo che l'incappucciato se n'era già andato — motivo per cui non
+gli ha mai raccontato nulla. Terminato l'interrogatorio, Artemis lo
+tramortisce con un colpo netto alla fronte, non letale.
 
-Terminato l'interrogatorio, Artemis lo tramortisce. Il gruppo decide di
-inscenare un suicidio: lo impiccano a una trave con un cartello beffardo
-("Non va tutto bene") appeso al corpo, prima di calarsi dalla finestra con
-la corda e allontanarsi.
+## Il finto suicidio e la fuga dalla villa
 
-## La piazza: il prezzo della clemenza
-
-In contemporanea, in piazza, [[Don Matteor]] aveva usato Taumaturgia per
-simulare rumori imbarazzanti attribuibili a [[Izek]], deviando più volte
-su di lui la furia di [[Barone Vargas]] per la risata della guardia
-punita. Un accorato discorso pubblico in difesa dell'unità di Vallaki
-tocca il cuore della folla e delle guardie vicine, ma fa infuriare Vargas,
-che accusa Don Matteor di essersi intromesso nella giustizia di Vallaki,
-lo dichiara non più gradito e ordina di disarmare ed espellere dalla città
-[[Ismark Kolyanovich]] e [[Ireena]]. Prima che l'ordine venga eseguito,
-Don Matteor lancia un incantesimo d'area che placa l'ostilità di Vargas e
-Izek: il Borgomastro, come risvegliato da uno stordimento, dimentica la
-propria rabbia e congeda tutti rimandando la festa, ma il bando contro
-Don Matteor, Ismark e Ireena resta emesso.
+Il gruppo decide di inscenare un suicidio: impiccano il ragazzo a una
+trave della soffitta con la sedia rovesciata ai suoi piedi e un cartello
+beffardo ("Non va tutto bene") appeso alla pancia, mentre fuori dalla
+finestra si addensa un numero innaturale di corvi che picchiettano contro
+il vetro. Recuperata la seconda spada di [[Artemis]] con Mano Magica,
+[[Erieth]] si cala dalla finestra e usa il suo ultimo Passo Nebbioso per
+guadagnare terreno; gli altri due scendono con la corda, uno sorretto
+dall'altro con due Mani Magiche. Mentre si allontanano tra i vicoli senza
+essere visti, vedono una truppa di guardie raggiungere proprio in quel
+momento l'ingresso della villa, e uno sciame di pipistrelli attraversare
+il cielo in direzione del castello di [[Strahd von Zarovich|Strahd]] —
+secondo [[Urwin]], una delle sue spie.
 
 ## Ritorno alla locanda
 
 Riuniti alla [[Locanda di Urwin]], [[Tarik]] identifica gli anelli
-sottratti al figlio di Vargas (uno reca lo stemma dei Vallakovic) e
-studia il grimorio: contiene trucchetti e incantesimi fino al quinto
-livello, confermando le capacità straordinarie di chi lo possedeva
-originariamente.
+sottratti al ragazzo — nessuno magico, ma uno reca lo stemma della casata
+Vallakovic — e studia il grimorio: trucchetti e incantesimi fino al
+quinto livello (tra cui palla di fuoco, volare e invisibilità superiore),
+la conferma che chi lo possedeva in origine fosse un incantatore di
+potere straordinario.
 
-[[Artemis]] scambia poche battute criptiche con [[Rictavio]], intento a
-un solitario: quest'ultimo lascia intendere di sapere più di quanto dica,
-accennando persino a voler un giorno leggere "il tuo diario, con tutte le
-tue avventure" — un commento inquietante, dato che nessuno gli ha detto di
-tenerne uno.
+[[Artemis]] scambia intanto poche battute con [[Rictavio]], intento a un
+solitario alla locanda: gli blocca per gioco una carta e riceve in
+cambio un'allusione inquietante, un giorno voler leggere "il tuo diario,
+con tutte le tue avventure" — nessuno gli ha mai detto di tenerne uno.
 
-Don Matteor racconta a Urwin l'accaduto: lui, Ismark e Ireena sono ora
-banditi da Vallaki. Urwin offre rifugio e informazioni: un'antica casata
-locale (nome incerto, forse "Oster") che un tempo serviva
-[[Strahd von Zarovich]] prima che diventasse ciò che è ora, ora ricca di
-terre fuori città e con qualche capacità magica nella matriarca, potrebbe
-essere legata a [[I Veri Nobili di Vallaki|la setta incappucciata]], che
-si riunirebbe a orari fissi in una casa sorvegliata. Urwin avverte che
-potrebbe presto arrivare il momento di scegliere da che parte stare.
+## La piazza: il prezzo della clemenza
+
+Nel frattempo [[Don Matteor]] racconta agli altri come sia andata la
+festa in sua assenza: la sfera cerimoniale del Sole Splendente, bagnata
+dal temporale, non si è accesa, la folla è scivolata nel caos e
+[[Barone Vargas]] ha quasi scatenato le proprie guardie contro i
+cittadini. Don Matteor ha guadagnato tempo con un discorso pubblico in
+difesa dell'unità di Vallaki, ma si è inimicato Vargas al punto da farsi
+dichiarare non gradito e ordinare l'espulsione sua, di
+[[Ismark Kolyanovich]] e di [[Ireena]] dalla città — bando che resta in
+vigore nonostante l'incantesimo che in extremis ha placato l'ira del
+Borgomastro.
 
 ## La decisione di partire
 
-Il gruppo decide di dirigersi verso l'accampamento dei Vistani, ritenuti
-gli unici a sapere come lasciare le nebbie di Barovia, rimandando una
-visita ad [[Argynvostholt]]. Erieth, riflettendo sulla lettera di
-[[Strahd von Zarovich]] ancora intonsa sul tavolino, confessa di non
-essere più così sicuro che il vampiro sia il loro vero nemico, viste le
-azioni ben peggiori a cui hanno assistito a Vallaki.
+Persa ormai l'unica pista rimasta sull'uomo incappucciato — svanito nel
+nulla col teletrasporto — il gruppo decide di dirigersi verso
+l'[[Accampamento dei Vistani]], ritenuti gli unici a sapere come lasciare
+le nebbie di Barovia, rimandando una tappa ad [[Argynvostholt]].
+[[Erieth]], guardando la lettera ancora sigillata di
+[[Strahd von Zarovich|Strahd]] sul tavolo, confessa di non essere più
+così sicuro che il vampiro sia il loro vero nemico, viste le atrocità
+ben peggiori viste a Vallaki per mano di uomini vivi.
 
 Per evitare il rastrellamento di guardie scatenato dall'omicidio di
-[[Padre Lucian Petrovich]] e dalla scoperta dell'"incidente" alla villa,
-il gruppo passa la notte nascosto nella [[Bottega del Becchino]], ormai
-libera dai vampiri. Durante gli spostamenti notturni, una pattuglia ferma
-Ismark come straniero sospetto: Erieth, nascosto, incanta con Suggestione
-il capopattuglia convincendolo a scortare gli "amici" fuori dalla città in
-sicurezza — cosa che avviene senza intoppi.
+[[Padre Lucian Petrovich]] e dalla scoperta del cadavere in soffitta, il
+gruppo passa la notte nascosto nella [[Bottega del Becchino]], ormai
+libera dai vampiri, dopo che [[Urwin]] ha promesso di lasciare loro
+qualche corvo di guardia. Lungo il tragitto una pattuglia ferma
+[[Ismark Kolyanovich]] come straniero sospetto: [[Erieth]], nascosto,
+lo incanta con Suggestione convincendolo a scortare lui e i compagni
+fuori dalla città in sicurezza — la scorta, gentilissima, li accompagna
+fino al cancello e li lascia andare senza fare altre domande.
 
-All'alba il gruppo recupera il carro da Urwin e lascia Vallaki, notando
-per strada una tensione crescente tra cittadini e guardie, con membri
-della setta incappucciata che sembrano istigare la folla contro di loro.
-La compagnia esce dai cancelli diretta verso l'accampamento dei
-[[Accampamento dei Vistani|Vistani]].
+All'alba il gruppo recupera il carro da [[Urwin]] e lascia Vallaki,
+notando lungo la strada principale una tensione crescente tra cittadini e
+guardie, apparentemente istigata da alcuni incappucciati de
+[[I Veri Nobili di Vallaki|la setta]] mescolati alla folla. La compagnia
+esce dai cancelli senza intoppi, diretta verso l'[[Accampamento dei
+Vistani]].
