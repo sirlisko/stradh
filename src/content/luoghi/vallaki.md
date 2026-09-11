@@ -7,7 +7,10 @@ estratto: Cittadina murata governata da Barone Vargas, che impone con la forza u
 
 Cittadina raggiunta dal gruppo scortando [[Ismark Kolyanovich]] e
 [[Ireena]] dal [[Villaggio di Barovia]]. Governata da [[Barone Vargas]] col
-suo programma di "felicità di stato" imposto con metodi violenti.
+suo programma di "felicità di stato" imposto con metodi violenti. Manifesti
+e maschere sorridenti dipinte a mano tappezzano muri e vetrine, imposti a
+monito di questa "felicità"; la piazza principale ospita anche una forca,
+riadattata a palco per discorsi e cerimonie ufficiali.
 
 Luoghi principali: la [[Locanda di Urwin]], la [[Chiesa di Vallaki]], la
 [[Villa del Borgomastro]], la [[Bottega del Becchino]] di [[Van der Vort]].
