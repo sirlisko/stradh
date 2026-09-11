@@ -15,6 +15,7 @@ interface Props {
 const { title, description = 'Diario della campagna Curse of Strahd.' } = Astro.props;
 const pageTitle = `${title} · La Maledizione di Strahd`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL('/images/og_image.png', Astro.site);
 ---
 <!doctype html>
 <html lang="it">
@@ -32,9 +33,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={ogImageURL} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
     <script is:inline>
       try {
         if (localStorage.getItem('sidebar-collapsed') === '1') {
