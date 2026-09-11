@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "trascrivi": "node scripts/trascrivi.mjs",
+    "sessione": "node scripts/sessione.mjs"
   },
   "dependencies": {
-    "astro": "^7.3.1",
     "@astrojs/markdown-remark": "^7.3.0",
     "@fontsource/cinzel": "^5.2.5",
-    "@fontsource/eb-garamond": "^5.2.5"
+    "@fontsource/eb-garamond": "^5.2.5",
+    "astro": "^7.3.1",
+    "parakeet-coreml": "^2.2.0"
   },
   "devDependencies": {
     "unist-util-visit": "^5.0.0"

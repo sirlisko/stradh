@@ -46,6 +46,20 @@ Quando l'utente incolla la trascrizione di una sessione:
    ha cambiato in modo significativo lo stato generale della campagna (es.
    un obiettivo raggiunto, una nuova fazione emersa).
 
+### Pipeline audio → sessione (opzionale)
+
+Invece di incollare la trascrizione a mano, si può partire da una
+registrazione audio: metti il file in `audio/` (cartella gitignored) e lancia
+`pnpm trascrivi` (trascrizione locale con Parakeet TDT v3 via
+`parakeet-coreml`, accelerata dal Neural Engine — richiede macOS 14+ Apple
+Silicon e `ffmpeg` installato; al primo avvio scarica ~1.5GB di modelli).
+Poi `pnpm sessione -- audio/sessione-NN.txt`
+richiama Claude Code in modalità non interattiva (`claude -p`) che segue
+questo stesso workflow sul file indicato. La trascrizione automatica può
+contenere errori di riconoscimento o nomi storpiati: quando elabori un file
+generato così, segui comunque le regole sopra ma segnala alla fine eventuali
+ambiguità invece di indovinare in silenzio.
+
 ## Cose da NON fare
 
 - Non inventare un secondo sistema di link: usa solo `[[...]]`, mai link
