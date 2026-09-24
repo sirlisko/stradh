@@ -1,23 +1,32 @@
 ---
 import { getCollection, render } from 'astro:content';
 import EntryLayout from '../../layouts/EntryLayout.astro';
+import { romano, dataLunga } from '../../lib/romano';
 
 export async function getStaticPaths() {
-  const sessioni = await getCollection('sessions');
-  return sessioni.map((entry) => ({
+  const sessioni = (await getCollection('sessions')).sort((a, b) => a.data.numero - b.data.numero);
+  return sessioni.map((entry, i) => ({
     params: { id: entry.id },
-    props: { entry },
+    props: { entry, precedente: sessioni[i - 1], successiva: sessioni[i + 1] },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry, precedente, successiva } = Astro.props;
 const { Content } = await render(entry);
 ---
 <EntryLayout
   titolo={entry.data.titolo}
-  meta={`Sessione ${entry.data.numero} · ${entry.data.data.toLocaleDateString('it-IT')}`}
+  meta={`Sessione ${romano(entry.data.numero)} · ${dataLunga(entry.data.data)}`}
   tag={entry.data.tag}
   backlinksUrl={`/diario/${entry.id}`}
 >
   <Content />
+  <nav slot="fine" class="entry-pager" aria-label="Altre sessioni">
+    {precedente && (
+      <a href={`/diario/${precedente.id}`}>&larr; {romano(precedente.data.numero)}. {precedente.data.titolo}</a>
+    )}
+    {successiva && (
+      <a class="entry-pager-next" href={`/diario/${successiva.id}`}>{romano(successiva.data.numero)}. {successiva.data.titolo} &rarr;</a>
+    )}
+  </nav>
 </EntryLayout>

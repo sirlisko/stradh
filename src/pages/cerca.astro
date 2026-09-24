@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Cerca">
+  <style is:inline>
+    /* In un layer, così le regole del sito vincono sulla specificità gonfiata di Pagefind. */
+    @import url('/pagefind/pagefind-component-ui.css') layer(pagefind);
+  </style>
+  <h1 class="page-title">Cerca</h1>
+  <p class="page-lede">Cerca tra sessioni, personaggi, png e luoghi.</p>
+
+  <div class="cerca">
+    <pagefind-input placeholder="Strahd, Ireena, Vallaki…" autofocus></pagefind-input>
+    <div class="cerca-barra">
+      <pagefind-summary></pagefind-summary>
+      <pagefind-filter-dropdown filter="sezione" label="Sezione" hide-clear></pagefind-filter-dropdown>
+    </div>
+    <pagefind-results show-sub-results></pagefind-results>
+    <p class="cerca-assente" hidden>
+      Indice di ricerca non disponibile: viene generato solo da <code>pnpm build</code>
+      (provalo con <code>pnpm preview</code>).
+    </p>
+  </div>
+
+  <script is:inline type="module" src="/pagefind/pagefind-component-ui.js"></script>
+  <script is:inline type="module">
+    const pagefind = window.PagefindComponents;
+    if (!pagefind) {
+      document.querySelector('.cerca-assente').hidden = false;
+    } else {
+      const instance = pagefind.getInstanceManager().getInstance('default');
+      // La traduzione italiana di serie rende clear_search con "Cancella la cronologia".
+      instance.setTranslations({ clear_search: 'Cancella' });
+      const q = new URLSearchParams(location.search).get('q');
+      if (q) instance.triggerSearch(q);
+    }
+  </script>
+</BaseLayout>

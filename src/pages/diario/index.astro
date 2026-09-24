@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CardGrid from '../../components/CardGrid.astro';
 import Card from '../../components/Card.astro';
 import { getCollection } from 'astro:content';
+import { romano, dataLunga } from '../../lib/romano';
 
 const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
 ---
@@ -15,7 +16,7 @@ const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero 
         href={`/diario/${s.id}`}
         titolo={s.data.titolo}
         estratto={s.data.estratto}
-        meta={`Sessione ${s.data.numero} · ${s.data.data.toLocaleDateString('it-IT')}`}
+        meta={`Sessione ${romano(s.data.numero)} · ${dataLunga(s.data.data)}`}
       />
     ))}
   </CardGrid>

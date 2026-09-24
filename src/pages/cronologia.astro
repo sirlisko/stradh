@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { romano, dataLunga } from '../lib/romano';
 
 const sessioni = (await getCollection('sessions')).sort((a, b) => a.data.numero - b.data.numero);
 ---
@@ -13,7 +14,7 @@ const sessioni = (await getCollection('sessions')).sort((a, b) => a.data.numero 
       <li class="timeline-item">
         <span class="timeline-marker" aria-hidden="true"></span>
         <div class="timeline-body">
-          <span class="timeline-meta">Sessione {s.data.numero} · {s.data.data.toLocaleDateString('it-IT')}</span>
+          <span class="timeline-meta">Sessione {romano(s.data.numero)} · {dataLunga(s.data.data)}</span>
           <a class="timeline-title" href={`/diario/${s.id}`}>{s.data.titolo}</a>
           {s.data.estratto && <p class="timeline-estratto">{s.data.estratto}</p>}
         </div>

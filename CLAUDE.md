@@ -85,10 +85,16 @@ ambiguità invece di indovinare in silenzio.
   server dopo aver aggiunto nuove entità risolve il problema.
 - La cartella `src/content/` può essere aperta direttamente come vault
   Obsidian per navigare graficamente i collegamenti.
-- La pagina `/mappa` (`src/pages/mappa.astro`) mostra uno schizzo di viaggio
-  con i luoghi "di punta" di Barovia (non le tappe interne a un
-  insediamento, es. le botteghe di Vallaki). Le coordinate dei pin sono
-  scelte a mano nell'array `nodi` del file — un nuovo luogo importante va
-  aggiunto lì manualmente (con eventuale strada in `stradePercorse` o
-  `stradeConosciute`), altrimenti resta nella lista `/luoghi/` ma non
-  compare sulla mappa.
+- La mappa è nascosta: il file è `src/pages/_mappa.astro` (il prefisso `_`
+  lo esclude dal routing) e non compare nella navigazione. Per ripristinarla,
+  rinominalo in `mappa.astro` e riaggiungi il link in
+  `src/components/Header.astro`. Mostra uno schizzo di viaggio con i luoghi
+  "di punta" di Barovia (non le tappe interne a un insediamento, es. le
+  botteghe di Vallaki); le coordinate dei pin sono scelte a mano nell'array
+  `nodi`, con eventuali strade in `stradePercorse` o `stradeConosciute`.
+- La ricerca (`/cerca`, `src/pages/cerca.astro`) usa Pagefind: l'indice viene
+  generato da `pnpm build` (passo `pagefind --site dist`) e quindi NON esiste
+  in `astro dev` — per provarla usa `pnpm build && pnpm preview`. Vengono
+  indicizzate solo le pagine che usano `EntryLayout` (`data-pagefind-body`),
+  con un filtro `sezione`; metadati, badge, backlink e paginazione sono
+  esclusi con `data-pagefind-ignore`. Supporta `/cerca/?q=termine`.

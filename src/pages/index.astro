@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { romano, dataLunga } from '../lib/romano';
 
 const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
 const ultima = sessioni[0];
@@ -16,27 +17,22 @@ const immaginiComplete: Record<string, string> = {
 };
 const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
 ---
-<BaseLayout title="Home">
-  <div class="hero">
-    <h1 class="page-title">La Maledizione di Strahd</h1>
-    <div class="ornament" aria-hidden="true">❖</div>
-    <p>
-      Diario della campagna: sessioni giocate, personaggi, PNG incontrati e i luoghi di Barovia.
-    </p>
-  </div>
+<BaseLayout title="Home" masthead>
+  <p class="prossima-sessione" id="prossima-sessione" hidden>
+    Prossima sessione: <span id="prossima-sessione-value"></span>
+  </p>
 
-  <div class="session-status">
-    {ultima && (
-      <div class="session-status-item">
-        <span class="session-status-label">Ultima sessione</span>
-        <a class="session-status-value" href={`/diario/${ultima.id}`}>{ultima.data.titolo}</a>
-      </div>
-    )}
-    <div class="session-status-item" id="prossima-sessione" hidden>
-      <span class="session-status-label">Prossima sessione</span>
-      <span class="session-status-value" id="prossima-sessione-value"></span>
-    </div>
-  </div>
+  {ultima && (
+    <section class="ultima-sessione">
+      <p class="kicker kicker-split">
+        <span>Ultima sessione · {romano(ultima.data.numero)}</span>
+        <span>{dataLunga(ultima.data.data)}</span>
+      </p>
+      <h2><a href={`/diario/${ultima.id}`}>{ultima.data.titolo}</a></h2>
+      {ultima.data.estratto && <p class="capolettera">{ultima.data.estratto}</p>}
+      <p class="continua"><a href={`/diario/${ultima.id}`}>Continua a leggere</a> &rarr;</p>
+    </section>
+  )}
 
   <script>
     const endpoint = 'https://cms.sirlisko.com/items/stradh';
@@ -61,7 +57,7 @@ const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
           minute: '2-digit',
         });
 
-        valueEl.innerHTML = `${giorno}<br/>alle ${ora}`;
+        valueEl.textContent = `${giorno} alle ${ora}`;
         item.hidden = false;
       })
       .catch(() => {
@@ -70,22 +66,34 @@ const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
   </script>
 
   {gruppo.length > 0 && (
-    <div class="cast-grid">
-      {gruppo.map((p) => (
-        <a class="cast-portrait" href={`/personaggi/${p.id}`}>
-          <img src={immaginiComplete[p.id]} alt={p.data.titolo} loading="lazy" />
-          <span class="cast-portrait-name">{p.data.titolo}</span>
-        </a>
-      ))}
-    </div>
+    <section>
+      <div class="fregio" aria-hidden="true">&#8258;</div>
+      <h2 class="section-title">La compagnia</h2>
+      <div class="cast-grid">
+        {gruppo.map((p) => (
+          <a class="cast-portrait" href={`/personaggi/${p.id}`}>
+            <img src={immaginiComplete[p.id]} alt="" loading="lazy" />
+            <span>{p.data.titolo}</span>
+          </a>
+        ))}
+      </div>
+    </section>
   )}
 
-  <nav class="card-grid hero-nav">
-    <a class="card" href="/riassunto/"><h3>Riassunto</h3><p>La storia della campagna fin qui, in breve.</p></a>
-    <a class="card" href="/diario/"><h3>Diario</h3><p>Il resoconto di ogni sessione giocata.</p></a>
-    <a class="card" href="/personaggi/"><h3>Personaggi</h3><p>Gli eroi (o sciagurati) del gruppo.</p></a>
-    <a class="card" href="/png/"><h3>PNG</h3><p>Alleati, nemici e comparse di Barovia.</p></a>
-    <a class="card" href="/luoghi/"><h3>Luoghi</h3><p>Villaggi, castelli e luoghi maledetti.</p></a>
-    <a class="card" href="/cronologia/"><h3>Cronologia</h3><p>La storia della campagna in ordine, sessione dopo sessione.</p></a>
-  </nav>
+  <section>
+    <div class="fregio" aria-hidden="true">&#8258;</div>
+    <h2 class="section-title">Indice delle sessioni</h2>
+    <ol class="indice">
+      {sessioni.map((s) => (
+        <li>
+          <span class="indice-numero">{romano(s.data.numero)}</span>
+          <a href={`/diario/${s.id}`}>{s.data.titolo}</a>
+          <span class="indice-puntini" aria-hidden="true"></span>
+          <span class="indice-data">
+            {s.data.data.toLocaleDateString('it-IT', { day: 'numeric', month: 'short' })}
+          </span>
+        </li>
+      ))}
+    </ol>
+  </section>
 </BaseLayout>

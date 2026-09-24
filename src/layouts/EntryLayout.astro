@@ -11,25 +11,35 @@ interface Props {
   immagine?: string;
 }
 const { titolo, meta, stato, tag = [], backlinksUrl, immagine } = Astro.props;
+
+const sezioni: Record<string, string> = {
+  diario: 'Diario',
+  personaggi: 'Personaggi',
+  png: 'Png',
+  luoghi: 'Luoghi',
+  riassunto: 'Riassunto',
+};
+const sezione = sezioni[backlinksUrl.split('/')[1]];
 ---
 <BaseLayout title={titolo}>
-  <article>
-    <header class={`entry-header ${immagine ? 'entry-header-with-image' : ''}`}>
+  <article data-pagefind-body data-pagefind-filter={sezione && `sezione:${sezione}`}>
+    <header class="entry-header">
       {immagine && <img class="entry-image" src={immagine} alt={titolo} />}
-      <div class="entry-header-text">
-        <h1 class="page-title">{titolo}</h1>
-        {meta && <p class="entry-meta">{meta}</p>}
-        {(stato || tag.length > 0) && (
-          <div class="badge-row">
-            {stato && <span class={`badge badge-${stato}`}>{stato}</span>}
-            {tag.map((t) => <span class="badge">{t}</span>)}
-          </div>
-        )}
-      </div>
+      <h1 class="page-title" data-pagefind-weight="10">{titolo}</h1>
+      {meta && <p class="entry-meta" data-pagefind-ignore>{meta}</p>}
+      {(stato || tag.length > 0) && (
+        <div class="badge-row" data-pagefind-ignore>
+          {stato && <span class={`badge badge-${stato}`}>{stato}</span>}
+          {tag.map((t) => <span class="badge">{t}</span>)}
+        </div>
+      )}
     </header>
     <div class="entry-content">
       <slot />
     </div>
-    <Backlinks url={backlinksUrl} />
+    <div data-pagefind-ignore>
+      <Backlinks url={backlinksUrl} />
+      <slot name="fine" />
+    </div>
   </article>
 </BaseLayout>

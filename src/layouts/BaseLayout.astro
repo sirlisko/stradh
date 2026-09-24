@@ -1,18 +1,20 @@
 ---
-import '@fontsource/cinzel/400.css';
-import '@fontsource/cinzel/700.css';
-import '@fontsource/eb-garamond/400.css';
-import '@fontsource/eb-garamond/400-italic.css';
-import '@fontsource/eb-garamond/700.css';
+import '@fontsource/im-fell-english/400.css';
+import '@fontsource/im-fell-english/400-italic.css';
+import '@fontsource/im-fell-english-sc/400.css';
+import '@fontsource/im-fell-dw-pica/400.css';
+import '@fontsource/im-fell-dw-pica/400-italic.css';
+import '@fontsource/im-fell-great-primer/400.css';
 import '../styles/global.css';
-import Sidebar from '../components/Sidebar.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
   description?: string;
+  masthead?: boolean;
 }
-const { title, description = 'Diario della campagna Curse of Strahd.' } = Astro.props;
+const { title, description = 'Diario della campagna Curse of Strahd.', masthead = false } = Astro.props;
 const pageTitle = `${title} · La Maledizione di Strahd`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL('/images/og_image.png', Astro.site);
@@ -38,79 +40,14 @@ const ogImageURL = new URL('/images/og_image.png', Astro.site);
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
-    <script is:inline>
-      try {
-        if (localStorage.getItem('sidebar-collapsed') === '1') {
-          document.documentElement.classList.add('sidebar-collapsed');
-        }
-      } catch (e) {}
-    </script>
   </head>
   <body>
-    <div class="layout">
-      <Sidebar />
-      <button
-        id="sidebar-reopen"
-        class="sidebar-reopen-btn"
-        type="button"
-        aria-label="Apri la barra laterale"
-        title="Apri la barra laterale"
-      >
-        &raquo;
-      </button>
-      <div class="layout-main">
-        <div class="mobile-topbar">
-          <button
-            id="sidebar-mobile-toggle"
-            class="mobile-topbar-toggle"
-            type="button"
-            aria-label="Apri il menu"
-            aria-expanded="false"
-          >
-            <span></span><span></span><span></span>
-          </button>
-          <a href="/" class="mobile-topbar-title">La Maledizione di Strahd</a>
-        </div>
-        <main>
-          <div class="container">
-            <slot />
-          </div>
-        </main>
-        <Footer />
+    <Header masthead={masthead} />
+    <main>
+      <div class="container">
+        <slot />
       </div>
-      <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
-    </div>
-    <script>
-      const root = document.documentElement;
-
-      function setCollapsed(collapsed: boolean) {
-        root.classList.toggle('sidebar-collapsed', collapsed);
-        try {
-          localStorage.setItem('sidebar-collapsed', collapsed ? '1' : '0');
-        } catch (e) {}
-      }
-
-      document.getElementById('sidebar-collapse-toggle')?.addEventListener('click', () => {
-        setCollapsed(true);
-      });
-      document.getElementById('sidebar-reopen')?.addEventListener('click', () => {
-        setCollapsed(false);
-      });
-
-      function setMobileOpen(open: boolean) {
-        root.classList.toggle('sidebar-mobile-open', open);
-        document.getElementById('sidebar-mobile-toggle')?.setAttribute('aria-expanded', String(open));
-      }
-
-      document.getElementById('sidebar-mobile-toggle')?.addEventListener('click', () => {
-        setMobileOpen(!root.classList.contains('sidebar-mobile-open'));
-      });
-      document.getElementById('sidebar-backdrop')?.addEventListener('click', () => setMobileOpen(false));
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && root.classList.contains('sidebar-mobile-open')) {
-          setMobileOpen(false);
-        }
-      });
-    </script>
+    </main>
+    <Footer />
   </body>
 </html>

@@ -1,0 +1,34 @@
+---
+interface Props {
+  masthead?: boolean;
+}
+const { masthead = false } = Astro.props;
+
+const links = [
+  { href: '/riassunto/', label: 'Riassunto' },
+  { href: '/diario/', label: 'Diario' },
+  { href: '/cronologia/', label: 'Cronologia' },
+  { href: '/personaggi/', label: 'Personaggi' },
+  { href: '/png/', label: 'Png' },
+  { href: '/luoghi/', label: 'Luoghi' },
+  { href: '/cerca/', label: 'Cerca' },
+];
+
+const path = Astro.url.pathname;
+const isWithin = (href: string) => path === href.slice(0, -1) || path.startsWith(href);
+---
+<header class:list={['site-header', { 'site-header-masthead': masthead }]}>
+  {masthead ? (
+    <>
+      <p class="masthead-kicker">diario di campagna</p>
+      <h1 class="masthead-title">La Maledizione<br /><em>di</em> Strahd</h1>
+    </>
+  ) : (
+    <a href="/" class="site-header-title">La Maledizione <em>di</em> Strahd</a>
+  )}
+  <nav class="site-nav" aria-label="Navigazione principale">
+    {links.map((l) => (
+      <a href={l.href} aria-current={isWithin(l.href) ? 'page' : undefined}>{l.label}</a>
+    ))}
+  </nav>
+</header>
