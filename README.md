@@ -1,107 +1,120 @@
 # Curse of Stradh
 
-Sito compagno per una campagna di *Curse of Strahd* (D&D 5e), in italiano.
-Diario delle sessioni, personaggi, PNG e luoghi, collegati tra loro con
-wikilink in stile Obsidian. Costruito con [Astro](https://astro.build),
-contenuti in Markdown.
+Companion site for an Italian-language *Curse of Strahd* (D&D 5e) campaign:
+session journal, player characters, NPCs and places, cross-linked with
+Obsidian-style wikilinks. Built with [Astro](https://astro.build), content in
+Markdown.
 
-Le convenzioni editoriali (frontmatter, wikilink, workflow settimanale) sono
-documentate in [`CLAUDE.md`](./CLAUDE.md) — quel file è pensato per guidare
-Claude Code quando aggiorna il sito, ma è la fonte di verità anche per chi
-scrive contenuti a mano.
+The site itself is in Italian; code and docs are in English. Editorial
+conventions (frontmatter, wikilinks, weekly workflow) live in
+[`CLAUDE.md`](./CLAUDE.md). That file is written to guide Claude Code when it
+updates the site, but it's also the source of truth for anyone writing
+content by hand.
 
-## Sviluppo
+## Development
 
-Richiede [pnpm](https://pnpm.io).
+Requires Node.js 22.12+ and [pnpm](https://pnpm.io).
 
 ```bash
 pnpm install
 pnpm dev       # http://localhost:4321
-pnpm build     # output statico in dist/
-pnpm preview   # serve la build di dist/
+pnpm build     # static output in dist/ (plus the Pagefind search index)
+pnpm preview   # serve the dist/ build
 ```
 
-Il sito è deployato su Netlify (`netlify.toml`), build automatica su push.
-`public/robots.txt` e il meta tag `noindex` tengono il sito fuori dagli
-indici dei motori di ricerca — non vanno rimossi.
+Deployed on Netlify (`netlify.toml`), building on every push to `main`.
+`public/robots.txt` and the `noindex` meta tag keep the site out of search
+engines on purpose; don't remove them.
 
-## Struttura dei contenuti
+## Content layout
+
+Collection and frontmatter names are Italian, matching the site's URLs:
 
 ```
 src/content/
-  sessions/     diario delle sessioni (sessione-NN.md)
-  personaggi/   personaggi giocanti
-  png/          personaggi non giocanti
-  luoghi/       luoghi visitati o conosciuti
-  riassunto/    overview generale della campagna
+  sessions/     session journal (sessione-NN.md)  → /diario/
+  personaggi/   player characters                 → /personaggi/
+  png/          non-player characters (PNG)       → /png/
+  luoghi/       places visited or heard of        → /luoghi/
+  riassunto/    campaign overview                 → /riassunto/
 ```
 
-Ogni entità può linkare le altre con `[[Nome Entità]]` (o
-`[[Nome|testo visualizzato]]`); i link vengono risolti a build time e un
-wikilink verso un'entità inesistente non rompe la build — viene mostrato
-come "link rotto" con un warning in console, utile per notare i typo. Vedi
-`CLAUDE.md` per i dettagli completi e le cose da non fare.
+Any entry can link to another with `[[Entity Name]]` (or
+`[[Name|display text]]`). Links are resolved at build time. A wikilink to a
+missing entry doesn't break the build: it renders as a "broken link" and logs
+a warning, which helps catch typos. See `CLAUDE.md` for the full details.
 
-## Pipeline audio → sessione
+`src/content/` can also be opened directly as an Obsidian vault.
 
-Invece di trascrivere e riassumere una sessione a mano, si può partire
-direttamente dalla registrazione audio: uno script la trascrive in locale,
-un secondo chiama Claude Code (non interattivo) che segue il workflow
-descritto in `CLAUDE.md` per aggiornare sessione, entità e wikilink.
+## Audio → session pipeline
 
-### Prerequisiti
+Instead of transcribing and summarising a session by hand, you can start from
+the audio recording. One script transcribes it locally, then a second one runs
+Claude Code non-interactively. It follows the workflow in `CLAUDE.md` to
+update the session, entities and wikilinks.
 
-- macOS 14+ su Apple Silicon (richiesto da `parakeet-coreml`, che usa il
-  Neural Engine per la trascrizione)
-- Node.js 20+ e `ffmpeg` installati (`brew install ffmpeg`)
-- [Claude Code](https://claude.com/product/claude-code) installato e
-  autenticato (`claude auth login`) — la pipeline lo richiama come CLI
+### Requirements
 
-### 1. Aggiungi l'audio
+- macOS 14+ on Apple Silicon (required by `parakeet-coreml`, which runs
+  transcription on the Neural Engine; it's an optional dependency and is
+  skipped on other platforms)
+- `ffmpeg` (`brew install ffmpeg`)
+- [Claude Code](https://claude.com/product/claude-code), installed and
+  authenticated (`claude auth login`), since the pipeline calls it as a CLI
 
-Metti la registrazione in `audio/` (cartella gitignored — audio e
-trascrizioni grezze non finiscono mai nel repo):
+### 1. Add the audio
+
+Put the recording in `audio/`. The folder is gitignored, so recordings and raw
+transcripts never end up in the repo:
 
 ```bash
 mkdir -p audio
-cp ~/Registrazioni/sessione-11.mp3 audio/
+cp ~/Recordings/session-11.mp3 audio/
 ```
 
-### 2. Trascrivi
+### 2. Transcribe
 
 ```bash
-pnpm trascrivi                          # trova da solo l'unico file nuovo in audio/
-pnpm trascrivi -- audio/sessione-11.mp3 # oppure specifica il file
+pnpm transcribe                          # picks the only new file in audio/
+pnpm transcribe -- audio/session-11.mp3  # or name the file
 ```
 
-Converte l'audio in PCM 16kHz mono con `ffmpeg` e trascrive con **Parakeet
-TDT v3** (accelerato dal Neural Engine, ~40x realtime su Apple Silicon —
-un'ora di audio in circa 90 secondi). Al primo avvio scarica ~1.5GB di
-modelli (restano in cache per le volte successive). Produce
-`audio/sessione-11.txt`.
+Converts the audio to 16kHz mono PCM with `ffmpeg` and transcribes it with
+**Parakeet TDT v3** (Neural Engine accelerated, ~40x realtime on Apple
+Silicon, so an hour of audio takes about 90 seconds). The first run downloads
+~1.5GB of models, which are cached afterwards. Produces
+`audio/session-11.txt`.
 
-### 3. Genera i contenuti
+### 3. Generate the content
 
 ```bash
-pnpm sessione -- audio/sessione-11.txt
+pnpm session -- audio/session-11.txt
 ```
 
-Richiama `claude -p` in modalità non interattiva: legge la trascrizione,
-determina il numero di sessione corretto, scrive `sessione-NN.md` e
-crea/aggiorna le entità coinvolte seguendo `CLAUDE.md`, wikilink inclusi.
-Modello di default `sonnet`, configurabile con `CLAUDE_MODEL=opus pnpm
-sessione -- ...`.
+Runs `claude -p` non-interactively. It reads the transcript, works out the
+session number, writes `sessione-NN.md` and creates or updates the entities
+involved, following `CLAUDE.md`, wikilinks included. The default model is
+`sonnet`; override it with `CLAUDE_MODEL=opus pnpm session -- ...`.
 
-**Controlla sempre `git diff` prima di committare**: la trascrizione
-automatica può contenere errori di riconoscimento o nomi storpiati, e in
-modalità non interattiva Claude non può fare domande di chiarimento — se
-qualcosa è ambiguo, lo segnala nel proprio messaggio finale invece di
-indovinare in silenzio.
+**Always review `git diff` before committing.** Automatic transcription can
+misrecognise words or mangle names, and in non-interactive mode Claude can't
+ask clarifying questions. When something is ambiguous, it flags it in its
+final message instead of silently guessing.
 
-### Costi
+### Cost
 
-Se Claude Code è autenticato con un abbonamento (Pro/Max), `pnpm sessione`
-non ha costo a consumo: rientra nei limiti di utilizzo del piano, come una
-sessione interattiva normale. Con una chiave API il costo è invece a
-token (per una sessione di 2-3 ore, indicativamente pochi centesimi di
-dollaro con Sonnet).
+If Claude Code is signed in with a subscription (Pro/Max), `pnpm session` has
+no metered cost and counts against your plan's usage limits like a normal
+interactive session. With an API key it's billed per token (for a 2-3 hour
+session, roughly a few cents with Sonnet).
+
+## License
+
+- **Code** is licensed under [MIT](./LICENSE).
+- **Campaign content** (everything under `src/content/` and `public/images/`)
+  is licensed under [CC BY-NC 4.0](./LICENSE-CONTENT).
+
+This is unofficial Fan Content permitted under the
+[Wizards of the Coast Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy).
+Not approved/endorsed by Wizards. Portions of the materials used are property
+of Wizards of the Coast. ©Wizards of the Coast LLC.
