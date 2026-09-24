@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
 import { getCollection } from 'astro:content';
 import { toRoman, longDate } from '../lib/format';
 
@@ -9,13 +11,8 @@ const latest = sessions[0];
 const characters = (await getCollection('personaggi')).sort((a, b) =>
   a.data.titolo.localeCompare(b.data.titolo)
 );
-const portraits: Record<string, string> = {
-  artemis: '/images/personaggi/artemis-full.png',
-  'don-matteor': '/images/personaggi/don-matteor-full.png',
-  erieth: '/images/personaggi/erieth-full.png',
-  tarik: '/images/personaggi/tarik-full.png',
-};
-const party = characters.filter((p) => portraits[p.id]);
+const portraitFor = (id: string) => `/images/personaggi/${id}-full.png`;
+const party = characters.filter((p) => fs.existsSync(path.join(process.cwd(), 'public', portraitFor(p.id))));
 ---
 <BaseLayout title="Home" masthead>
   <p class="next-session" id="next-session" hidden>
@@ -72,7 +69,7 @@ const party = characters.filter((p) => portraits[p.id]);
       <div class="cast-grid">
         {party.map((p) => (
           <a class="cast-portrait" href={`/personaggi/${p.id}`}>
-            <img src={portraits[p.id]} alt="" loading="lazy" />
+            <img src={portraitFor(p.id)} alt="" loading="lazy" />
             <span>{p.data.titolo}</span>
           </a>
         ))}
