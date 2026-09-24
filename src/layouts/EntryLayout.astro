@@ -4,13 +4,14 @@ import Backlinks from '../components/Backlinks.astro';
 
 interface Props {
   title: string;
+  description?: string;
   meta?: string;
   status?: string;
   tags?: string[];
   backlinksUrl: string;
   image?: string;
 }
-const { title, meta, status, tags = [], backlinksUrl, image } = Astro.props;
+const { title, description, meta, status, tags = [], backlinksUrl, image } = Astro.props;
 
 const sections: Record<string, string> = {
   diario: 'Diario',
@@ -21,7 +22,7 @@ const sections: Record<string, string> = {
 };
 const section = sections[backlinksUrl.split('/')[1]];
 ---
-<BaseLayout title={title}>
+<BaseLayout title={title} description={description}>
   <article data-pagefind-body data-pagefind-filter={section && `sezione:${section}`}>
     <header class="entry-header">
       {image && <img class="entry-image" src={image} alt={title} />}

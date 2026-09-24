@@ -16,6 +16,7 @@ const { Content } = await render(entry);
 ---
 <EntryLayout
   title={entry.data.titolo}
+  description={entry.data.estratto}
   meta={`Sessione ${toRoman(entry.data.numero)} · ${longDate(entry.data.data)}`}
   tags={entry.data.tag}
   backlinksUrl={`/diario/${entry.id}`}
