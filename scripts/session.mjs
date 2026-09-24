@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Runs Claude Code non-interactively on a session transcript so it updates the
-// site following the weekly workflow described in CLAUDE.md.
+// Runs Claude Code non-interactively on a session transcript with the
+// new-session skill (.claude/skills/new-session/SKILL.md).
 // Usage: pnpm session -- audio/session-11.txt
 
 import { spawn } from 'node:child_process';
@@ -22,13 +22,13 @@ if (!fs.existsSync(transcriptPath)) {
 const relTranscript = path.relative(process.cwd(), transcriptPath);
 const model = process.env.CLAUDE_MODEL || 'sonnet';
 
-const prompt = `The file ${relTranscript} contains the raw transcript of the latest game session, produced by an automatic speech-to-text tool (it may contain recognition errors, mangled names and repetitions). Read it and follow the weekly session workflow described in CLAUDE.md: work out the correct session number from the existing files in src/content/sessions/, create the session file, create or update the entities involved (personaggi/png/luoghi), and link everything with [[...]] wikilinks. If a name or detail in the transcript is ambiguous, make the most reasonable choice and flag it clearly at the end of your message rather than leaving the work unfinished.`;
+const prompt = `Use the new-session skill on ${relTranscript}: it's the raw transcript of the latest game session, produced by automatic speech-to-text, so expect recognition errors and mangled names. You're running non-interactively and can't ask questions: make the most reasonable choice for anything ambiguous and flag it in the final report.`;
 
 console.log(`Running Claude Code (model: ${model}) on ${relTranscript}...\n`);
 
 const child = spawn(
   'claude',
-  ['-p', prompt, '--allowedTools', 'Read,Write,Edit,Grep,Glob,WebFetch', '--model', model],
+  ['-p', prompt, '--allowedTools', 'Skill,Read,Write,Edit,Grep,Glob,WebFetch,Bash(pnpm build)', '--model', model],
   { stdio: 'inherit', cwd: process.cwd() }
 );
 

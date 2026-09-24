@@ -6,10 +6,24 @@ Obsidian-style wikilinks. Built with [Astro](https://astro.build), content in
 Markdown.
 
 The site itself is in Italian; code and docs are in English. Editorial
-conventions (frontmatter, wikilinks, weekly workflow) live in
-[`CLAUDE.md`](./CLAUDE.md). That file is written to guide Claude Code when it
-updates the site, but it's also the source of truth for anyone writing
-content by hand.
+conventions (frontmatter, wikilinks, spoilers) live in
+[`CLAUDE.md`](./CLAUDE.md), and the procedure for turning a session
+transcript into site updates is the `new-session` Claude Code skill
+([`.claude/skills/new-session/SKILL.md`](./.claude/skills/new-session/SKILL.md)).
+Both are written to guide Claude Code, but they're also the source of truth
+for anyone writing content by hand.
+
+## Adding a session
+
+In Claude Code, paste the session transcript (or ask it to process
+`audio/session-NN.txt`) and the `new-session` skill kicks in: it writes the
+session entry, creates or updates characters, NPCs and places, adjusts the
+overview and map, runs `pnpm build` to catch broken wikilinks, and reports any
+ambiguities. You can also invoke it explicitly with `/new-session`.
+
+To rename an entity or merge duplicates (common with misheard names), ask
+Claude Code or run `/rename-entity`: it rewrites every wikilink and adds a
+301 redirect in `netlify.toml` for the old URL.
 
 ## Development
 
@@ -23,8 +37,8 @@ pnpm preview   # serve the dist/ build
 ```
 
 Deployed on Netlify (`netlify.toml`), building on every push to `main`.
-`public/robots.txt` and the `noindex` meta tag keep the site out of search
-engines on purpose; don't remove them.
+A sitemap is generated at build time (`@astrojs/sitemap`) and referenced from
+`public/robots.txt`.
 
 ## Content layout
 
@@ -48,10 +62,9 @@ a warning, which helps catch typos. See `CLAUDE.md` for the full details.
 
 ## Audio → session pipeline
 
-Instead of transcribing and summarising a session by hand, you can start from
-the audio recording. One script transcribes it locally, then a second one runs
-Claude Code non-interactively. It follows the workflow in `CLAUDE.md` to
-update the session, entities and wikilinks.
+Instead of pasting a transcript, you can start from the audio recording. One
+script transcribes it locally, then a second one runs Claude Code
+non-interactively with the `new-session` skill.
 
 ### Requirements
 
@@ -91,9 +104,8 @@ Silicon, so an hour of audio takes about 90 seconds). The first run downloads
 pnpm session -- audio/session-11.txt
 ```
 
-Runs `claude -p` non-interactively. It reads the transcript, works out the
-session number, writes `sessione-NN.md` and creates or updates the entities
-involved, following `CLAUDE.md`, wikilinks included. The default model is
+Runs `claude -p` non-interactively with the `new-session` skill on the
+transcript. The default model is
 `sonnet`; override it with `CLAUDE_MODEL=opus pnpm session -- ...`.
 
 **Always review `git diff` before committing.** Automatic transcription can
