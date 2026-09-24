@@ -1,22 +1,22 @@
 ---
 interface Props {
   href: string;
-  titolo: string;
-  estratto?: string;
+  title: string;
+  excerpt?: string;
   meta?: string;
-  stato?: string;
-  immagine?: string;
+  status?: string;
+  image?: string;
 }
-const { href, titolo, estratto, meta, stato, immagine } = Astro.props;
+const { href, title, excerpt, meta, status, image } = Astro.props;
 ---
 <a class="card" href={href}>
-  {immagine && <img class="card-image" src={immagine} alt="" loading="lazy" />}
-  <h3>{titolo}</h3>
+  {image && <img class="card-image" src={image} alt="" loading="lazy" />}
+  <h3>{title}</h3>
   {meta && <p class="entry-meta">{meta}</p>}
-  {estratto && <p>{estratto}</p>}
-  {stato && (
+  {excerpt && <p>{excerpt}</p>}
+  {status && (
     <div class="badge-row">
-      <span class={`badge badge-${stato}`}>{stato}</span>
+      <span class={`badge badge-${status}`}>{status}</span>
     </div>
   )}
 </a>

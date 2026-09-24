@@ -76,7 +76,7 @@ main {
   padding: 4rem 0 3rem;
 }
 
-/* Testata */
+/* Header */
 
 .site-header {
   max-width: 1072px;
@@ -171,7 +171,7 @@ main {
   }
 }
 
-/* Piè di pagina */
+/* Footer */
 
 .site-footer {
   padding: 1rem 1rem 3rem;
@@ -194,9 +194,9 @@ main {
   color: var(--color-rubric);
 }
 
-/* Elementi tipografici comuni */
+/* Shared typography */
 
-.fregio {
+.ornament {
   margin: 3.5rem 0;
   text-align: center;
   font-family: var(--font-display);
@@ -228,7 +228,7 @@ main {
   letter-spacing: 0.1em;
 }
 
-.capolettera::first-letter,
+.drop-cap::first-letter,
 .entry-content > p:first-of-type::first-letter {
   float: left;
   font-family: var(--font-initial);
@@ -252,35 +252,35 @@ main {
 
 /* Home */
 
-.prossima-sessione {
+.next-session {
   margin: -2rem 0 3rem;
   text-align: center;
   font-style: italic;
   color: var(--color-ink-muted);
 }
 
-.ultima-sessione h2 {
+.latest-session h2 {
   margin: 0.5rem 0 1.4rem;
   font-size: clamp(2rem, 5vw, 2.75rem);
   line-height: 1.1;
 }
 
-.ultima-sessione h2 a {
+.latest-session h2 a {
   color: var(--color-ink);
   text-decoration: none;
 }
 
-.ultima-sessione h2 a:hover {
+.latest-session h2 a:hover {
   color: var(--color-rubric);
 }
 
-.ultima-sessione .capolettera {
+.latest-session .drop-cap {
   margin: 0;
   text-align: justify;
   hyphens: auto;
 }
 
-.continua {
+.read-more {
   margin: 1.1rem 0 0;
   font-style: italic;
 }
@@ -332,7 +332,7 @@ main {
   color: var(--color-rubric);
 }
 
-.indice {
+.session-index {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -341,13 +341,13 @@ main {
   gap: 0.4rem;
 }
 
-.indice li {
+.session-index li {
   display: flex;
   align-items: baseline;
   gap: 0.75rem;
 }
 
-.indice-numero {
+.session-index-number {
   flex: none;
   width: 3.25rem;
   text-align: right;
@@ -355,30 +355,30 @@ main {
   color: var(--color-rubric);
 }
 
-.indice a {
+.session-index a {
   color: var(--color-ink);
   text-decoration: none;
 }
 
-.indice a:hover {
+.session-index a:hover {
   color: var(--color-rubric);
   text-decoration: underline;
 }
 
-.indice-puntini {
+.session-index-leader {
   flex: 1 1 1.5rem;
   border-bottom: 1px dotted var(--color-rule);
   transform: translateY(-0.3em);
 }
 
-.indice-data {
+.session-index-date {
   flex: none;
   font-style: italic;
   font-size: 1.05rem;
   color: var(--color-ink-muted);
 }
 
-/* Elenchi (diario, personaggi, png, luoghi) */
+/* Lists (diario, personaggi, png, luoghi) */
 
 .card-grid {
   display: grid;
@@ -442,7 +442,7 @@ main {
   color: var(--color-rubric);
 }
 
-/* Voce singola */
+/* Single entry */
 
 .entry-header {
   display: flex;
@@ -557,7 +557,7 @@ main {
   text-align: right;
 }
 
-/* Cronologia */
+/* Timeline */
 
 .timeline {
   list-style: none;
@@ -606,13 +606,13 @@ main {
   color: var(--color-rubric);
 }
 
-.timeline-estratto {
+.timeline-excerpt {
   margin: 0.4rem 0 0;
   font-size: 1.1rem;
   color: var(--color-ink-muted);
 }
 
-/* Mappa */
+/* Map */
 
 .map-wrap {
   padding: 6px;
@@ -625,11 +625,11 @@ main {
   height: auto;
 }
 
-.map-carta {
+.map-paper {
   fill: #e6d7b3;
 }
 
-.map-strada-percorsa {
+.map-road-travelled {
   fill: none;
   stroke: var(--color-rubric);
   stroke-width: 5;
@@ -637,7 +637,7 @@ main {
   stroke-linejoin: round;
 }
 
-.map-strada-conosciuta {
+.map-road-known {
   fill: none;
   stroke: var(--color-ink);
   stroke-width: 2.5;
@@ -646,29 +646,29 @@ main {
   opacity: 0.75;
 }
 
-.map-nebbia {
+.map-fog {
   fill: none;
   stroke: var(--color-bg);
   stroke-width: 170;
 }
 
-.map-rosa-cerchio {
+.map-compass-ring {
   fill: none;
   stroke: var(--color-ink);
   stroke-width: 1.5;
 }
 
-.map-rosa-pieno {
+.map-compass-filled {
   fill: var(--color-ink);
 }
 
-.map-rosa-vuoto {
+.map-compass-hollow {
   fill: var(--color-bg);
   stroke: var(--color-ink);
   stroke-width: 1.2;
 }
 
-.map-rosa-n {
+.map-compass-north {
   font-family: var(--font-display);
   font-size: 30px;
   fill: var(--color-ink);
@@ -683,12 +683,12 @@ main {
   transition: r 0.15s ease;
 }
 
-.map-pin-visitato {
+.map-pin-visited {
   fill: var(--color-rubric);
   stroke: var(--color-bg);
 }
 
-.map-pin-ignoto {
+.map-pin-unknown {
   fill: rgba(239, 230, 208, 0.7);
   stroke: var(--color-ink);
   stroke-dasharray: 3 3;
@@ -711,7 +711,7 @@ main {
   fill: var(--color-ink);
 }
 
-.map-pin-label-ignoto {
+.map-pin-label-unknown {
   font-style: italic;
   fill: var(--color-ink-muted);
 }
@@ -739,11 +739,11 @@ main {
   flex-shrink: 0;
 }
 
-.map-legend-dot-visitato {
+.map-legend-dot-visited {
   background: var(--color-rubric);
 }
 
-.map-legend-dot-ignoto {
+.map-legend-dot-unknown {
   border: 2px dashed var(--color-ink);
 }
 
@@ -752,11 +752,11 @@ main {
   flex-shrink: 0;
 }
 
-.map-legend-line-percorsa {
+.map-legend-line-travelled {
   border-top: 3px solid var(--color-rubric);
 }
 
-.map-legend-line-conosciuta {
+.map-legend-line-known {
   border-top: 2px dashed var(--color-ink);
 }
 
@@ -766,9 +766,9 @@ main {
   color: var(--color-ink-muted);
 }
 
-/* Cerca */
+/* Search */
 
-.cerca {
+.search {
   --pf-text: var(--color-ink);
   --pf-text-secondary: var(--color-ink-muted);
   --pf-text-muted: var(--color-ink-muted);
@@ -792,29 +792,29 @@ main {
   --pf-results-gap: 1rem;
 }
 
-.cerca .pf-result-title {
+.search .pf-result-title {
   font-family: var(--font-display);
 }
 
-.cerca .pf-heading-chip {
+.search .pf-heading-chip {
   border-radius: 0;
   border-color: var(--color-hairline);
 }
 
-.cerca .pf-heading-link {
+.search .pf-heading-link {
   font-size: 1.05rem;
 }
 
-.cerca .pf-heading-excerpt {
+.search .pf-heading-excerpt {
   font-size: 1rem;
 }
 
-.cerca button,
-.cerca input {
+.search button,
+.search input {
   font-family: var(--font-body);
 }
 
-.cerca-barra {
+.search-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -823,7 +823,7 @@ main {
   margin: 1rem 0 1.5rem;
 }
 
-.cerca-assente {
+.search-unavailable {
   font-style: italic;
   color: var(--color-ink-muted);
 }

@@ -2,20 +2,20 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const luoghi = await getCollection('luoghi');
-const byId = Object.fromEntries(luoghi.map((l) => [l.id, l]));
+const places = await getCollection('luoghi');
+const byId = Object.fromEntries(places.map((l) => [l.id, l]));
 
-// Sfondo dipinto (public/images/mappe/barovia.webp) ricalcato da uno schizzo
-// della valle in coordinate 1920x1080. Solo i luoghi noti al gruppo hanno un
-// pin e un nome: il paesaggio resta anonimo per non fare spoiler.
+// Painted background (public/images/mappe/barovia.webp) traced from a sketch
+// of the valley in 1920x1080 coordinates. Only places the party knows about get
+// a pin and a name: the landscape stays unlabelled to avoid spoilers.
 const W = 1920;
 const H = 1080;
 
 type P = [number, number];
 
-const nodi = [
+const nodes = [
   { id: 'villaggio-di-barovia', x: 1730, y: 705 },
-  { id: 'castello-ravenloft', x: 1565, y: 455, grande: true },
+  { id: 'castello-ravenloft', x: 1565, y: 455, large: true },
   { id: 'vallaki', x: 835, y: 425 },
   { id: 'torre-abbandonata', x: 545, y: 305 },
   { id: 'wizard-of-wines', x: 175, y: 580 },
@@ -25,14 +25,14 @@ const nodi = [
   .map((n) => ({ ...n, entry: byId[n.id] }))
   .filter((n) => n.entry);
 
-const stradePercorse: P[][] = [
-  // Villaggio di Barovia → Vallaki lungo la vecchia strada di Svalich
+const travelledRoads: P[][] = [
+  // Village of Barovia → Vallaki along the Old Svalich Road
   [[1920, 605], [1852, 610], [1830, 642], [1790, 680], [1730, 705], [1660, 758], [1600, 814], [1520, 830], [1440, 836], [1370, 826], [1310, 790], [1272, 750], [1300, 712], [1305, 672], [1270, 640], [1210, 616], [1198, 560], [1150, 568], [1090, 580], [1034, 572], [1028, 512], [1044, 470], [1012, 448], [945, 440], [885, 428], [835, 425], [785, 440], [745, 468], [716, 500], [640, 476]],
   // Vallaki → Wizard of Wines
   [[745, 468], [716, 500], [640, 476], [570, 456], [512, 446], [432, 470], [360, 482], [312, 530], [290, 572], [240, 582], [196, 582]],
 ];
 
-const stradeConosciute: P[][] = [
+const knownRoads: P[][] = [
   [[1198, 548], [1260, 522], [1330, 492], [1400, 510], [1442, 506], [1500, 490], [1558, 468]],
   [[512, 446], [470, 426], [380, 420], [250, 420], [120, 410], [0, 415]],
   [[470, 426], [424, 362], [400, 302], [350, 256]],
@@ -71,7 +71,7 @@ function smooth(pts: P[]) {
           <stop offset="0%" stop-color="#7a1f2b" stop-opacity="0.55" />
           <stop offset="100%" stop-color="#7a1f2b" stop-opacity="0" />
         </radialGradient>
-        <filter id="seppia" color-interpolation-filters="sRGB">
+        <filter id="sepia" color-interpolation-filters="sRGB">
           <feColorMatrix type="saturate" values="0.3" />
           <feComponentTransfer>
             <feFuncR type="linear" slope="0.72" intercept="0.2" />
@@ -79,50 +79,50 @@ function smooth(pts: P[]) {
             <feFuncB type="linear" slope="0.62" intercept="0.1" />
           </feComponentTransfer>
         </filter>
-        <filter id="nebbia" x="-10%" y="-10%" width="120%" height="120%">
+        <filter id="fog" x="-10%" y="-10%" width="120%" height="120%">
           <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="3" seed="5" />
           <feDisplacementMap in="SourceGraphic" scale="110" />
           <feGaussianBlur stdDeviation="16" />
         </filter>
       </defs>
 
-      <rect width={W} height={H} class="map-carta" />
-      <image href="/images/mappe/barovia.webp" width={W} height={H} preserveAspectRatio="none" filter="url(#seppia)" />
+      <rect width={W} height={H} class="map-paper" />
+      <image href="/images/mappe/barovia.webp" width={W} height={H} preserveAspectRatio="none" filter="url(#sepia)" />
 
-      {stradeConosciute.map((s) => (
-        <path d={smooth(s)} class="map-strada-conosciuta" />
+      {knownRoads.map((s) => (
+        <path d={smooth(s)} class="map-road-known" />
       ))}
-      {stradePercorse.map((s) => (
-        <path d={smooth(s)} class="map-strada-percorsa" />
+      {travelledRoads.map((s) => (
+        <path d={smooth(s)} class="map-road-travelled" />
       ))}
 
-      <rect x="-40" y="-40" width={W + 80} height={H + 80} class="map-nebbia" filter="url(#nebbia)" />
+      <rect x="-40" y="-40" width={W + 80} height={H + 80} class="map-fog" filter="url(#fog)" />
 
-      <g transform="translate(1790 150)" class="map-rosa">
-        <circle r="46" class="map-rosa-cerchio" />
-        <path d="M0,-70 L10,-10 L0,0 Z M0,70 L-10,10 L0,0 Z M-70,0 L-10,-10 L0,0 Z M70,0 L10,10 L0,0 Z" class="map-rosa-pieno" />
-        <path d="M0,-70 L-10,-10 L0,0 Z M0,70 L10,10 L0,0 Z M-70,0 L-10,10 L0,0 Z M70,0 L10,-10 L0,0 Z" class="map-rosa-vuoto" />
-        <text y="-80" text-anchor="middle" class="map-rosa-n">N</text>
+      <g transform="translate(1790 150)" class="map-compass">
+        <circle r="46" class="map-compass-ring" />
+        <path d="M0,-70 L10,-10 L0,0 Z M0,70 L-10,10 L0,0 Z M-70,0 L-10,-10 L0,0 Z M70,0 L10,10 L0,0 Z" class="map-compass-filled" />
+        <path d="M0,-70 L-10,-10 L0,0 Z M0,70 L10,10 L0,0 Z M-70,0 L-10,10 L0,0 Z M70,0 L10,-10 L0,0 Z" class="map-compass-hollow" />
+        <text y="-80" text-anchor="middle" class="map-compass-north">N</text>
       </g>
 
-      {nodi.map((n) => {
-        const visitato = n.entry!.data.visitato;
-        const titolo = n.entry!.data.titolo;
-        const r = n.grande ? 18 : 13;
-        const larghezza = titolo.length * 11 + 24;
+      {nodes.map((n) => {
+        const visited = n.entry!.data.visitato;
+        const title = n.entry!.data.titolo;
+        const r = n.large ? 18 : 13;
+        const labelWidth = title.length * 11 + 24;
         return (
           <a href={`/luoghi/${n.id}`} class="map-pin-link">
-            {n.grande && <circle cx={n.x} cy={n.y} r={r * 4} fill="url(#castle-glow)" />}
+            {n.large && <circle cx={n.x} cy={n.y} r={r * 4} fill="url(#castle-glow)" />}
             <circle
               cx={n.x}
               cy={n.y}
               r={r}
-              class:list={['map-pin', { 'map-pin-visitato': visitato, 'map-pin-ignoto': !visitato }]}
+              class:list={['map-pin', { 'map-pin-visited': visited, 'map-pin-unknown': !visited }]}
             />
             <rect
-              x={n.x - larghezza / 2}
+              x={n.x - labelWidth / 2}
               y={n.y - r - 44}
-              width={larghezza}
+              width={labelWidth}
               height="32"
               rx="4"
               class="map-pin-label-bg"
@@ -130,10 +130,10 @@ function smooth(pts: P[]) {
             <text
               x={n.x}
               y={n.y - r - 21}
-              class:list={['map-pin-label', { 'map-pin-label-ignoto': !visitato }]}
+              class:list={['map-pin-label', { 'map-pin-label-unknown': !visited }]}
               text-anchor="middle"
             >
-              {titolo}
+              {title}
             </text>
           </a>
         );
@@ -142,10 +142,10 @@ function smooth(pts: P[]) {
   </div>
 
   <div class="map-legend">
-    <span class="map-legend-item"><span class="map-legend-dot map-legend-dot-visitato" aria-hidden="true"></span>Visitato</span>
-    <span class="map-legend-item"><span class="map-legend-dot map-legend-dot-ignoto" aria-hidden="true"></span>Conosciuto, non visitato</span>
-    <span class="map-legend-item"><span class="map-legend-line map-legend-line-percorsa" aria-hidden="true"></span>Strada percorsa</span>
-    <span class="map-legend-item"><span class="map-legend-line map-legend-line-conosciuta" aria-hidden="true"></span>Altre strade</span>
+    <span class="map-legend-item"><span class="map-legend-dot map-legend-dot-visited" aria-hidden="true"></span>Visitato</span>
+    <span class="map-legend-item"><span class="map-legend-dot map-legend-dot-unknown" aria-hidden="true"></span>Conosciuto, non visitato</span>
+    <span class="map-legend-item"><span class="map-legend-line map-legend-line-travelled" aria-hidden="true"></span>Strada percorsa</span>
+    <span class="map-legend-item"><span class="map-legend-line map-legend-line-known" aria-hidden="true"></span>Altre strade</span>
   </div>
 
   <p class="map-footnote">

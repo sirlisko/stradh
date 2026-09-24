@@ -5,6 +5,6 @@ import EntryLayout from '../layouts/EntryLayout.astro';
 const entry = await getEntry('riassunto', 'overview');
 const { Content } = await render(entry);
 ---
-<EntryLayout titolo={entry.data.titolo} backlinksUrl="/riassunto">
+<EntryLayout title={entry.data.titolo} backlinksUrl="/riassunto">
   <Content />
 </EntryLayout>

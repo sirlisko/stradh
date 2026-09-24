@@ -20,7 +20,7 @@ npm-debug.log*
 # obsidian (if src/content/ is opened as a vault)
 src/content/.obsidian/
 
-# registrazioni audio delle sessioni e relative trascrizioni grezze
+# session recordings and their raw transcripts
 audio/
 
 # OS

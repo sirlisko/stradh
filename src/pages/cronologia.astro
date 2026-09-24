@@ -1,22 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { romano, dataLunga } from '../lib/romano';
+import { toRoman, longDate } from '../lib/format';
 
-const sessioni = (await getCollection('sessions')).sort((a, b) => a.data.numero - b.data.numero);
+const sessions = (await getCollection('sessions')).sort((a, b) => a.data.numero - b.data.numero);
 ---
 <BaseLayout title="Cronologia">
   <h1 class="page-title">Cronologia</h1>
   <p class="page-lede">La storia della campagna in ordine, sessione dopo sessione.</p>
 
   <ol class="timeline">
-    {sessioni.map((s) => (
+    {sessions.map((s) => (
       <li class="timeline-item">
         <span class="timeline-marker" aria-hidden="true"></span>
         <div class="timeline-body">
-          <span class="timeline-meta">Sessione {romano(s.data.numero)} · {dataLunga(s.data.data)}</span>
+          <span class="timeline-meta">Sessione {toRoman(s.data.numero)} · {longDate(s.data.data)}</span>
           <a class="timeline-title" href={`/diario/${s.id}`}>{s.data.titolo}</a>
-          {s.data.estratto && <p class="timeline-estratto">{s.data.estratto}</p>}
+          {s.data.estratto && <p class="timeline-excerpt">{s.data.estratto}</p>}
         </div>
       </li>
     ))}

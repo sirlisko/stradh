@@ -3,8 +3,8 @@ import { getCollection, render } from 'astro:content';
 import EntryLayout from '../../layouts/EntryLayout.astro';
 
 export async function getStaticPaths() {
-  const luoghi = await getCollection('luoghi');
-  return luoghi.map((entry) => ({
+  const places = await getCollection('luoghi');
+  return places.map((entry) => ({
     params: { id: entry.id },
     props: { entry },
   }));
@@ -15,9 +15,9 @@ const { Content } = await render(entry);
 const meta = [entry.data.tipo, entry.data.regione].filter(Boolean).join(' · ');
 ---
 <EntryLayout
-  titolo={entry.data.titolo}
+  title={entry.data.titolo}
   meta={meta}
-  tag={entry.data.tag}
+  tags={entry.data.tag}
   backlinksUrl={`/luoghi/${entry.id}`}
 >
   <Content />

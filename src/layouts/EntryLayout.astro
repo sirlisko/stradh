@@ -3,34 +3,34 @@ import BaseLayout from './BaseLayout.astro';
 import Backlinks from '../components/Backlinks.astro';
 
 interface Props {
-  titolo: string;
+  title: string;
   meta?: string;
-  stato?: string;
-  tag?: string[];
+  status?: string;
+  tags?: string[];
   backlinksUrl: string;
-  immagine?: string;
+  image?: string;
 }
-const { titolo, meta, stato, tag = [], backlinksUrl, immagine } = Astro.props;
+const { title, meta, status, tags = [], backlinksUrl, image } = Astro.props;
 
-const sezioni: Record<string, string> = {
+const sections: Record<string, string> = {
   diario: 'Diario',
   personaggi: 'Personaggi',
   png: 'Png',
   luoghi: 'Luoghi',
   riassunto: 'Riassunto',
 };
-const sezione = sezioni[backlinksUrl.split('/')[1]];
+const section = sections[backlinksUrl.split('/')[1]];
 ---
-<BaseLayout title={titolo}>
-  <article data-pagefind-body data-pagefind-filter={sezione && `sezione:${sezione}`}>
+<BaseLayout title={title}>
+  <article data-pagefind-body data-pagefind-filter={section && `sezione:${section}`}>
     <header class="entry-header">
-      {immagine && <img class="entry-image" src={immagine} alt={titolo} />}
-      <h1 class="page-title" data-pagefind-weight="10">{titolo}</h1>
+      {image && <img class="entry-image" src={image} alt={title} />}
+      <h1 class="page-title" data-pagefind-weight="10">{title}</h1>
       {meta && <p class="entry-meta" data-pagefind-ignore>{meta}</p>}
-      {(stato || tag.length > 0) && (
+      {(status || tags.length > 0) && (
         <div class="badge-row" data-pagefind-ignore>
-          {stato && <span class={`badge badge-${stato}`}>{stato}</span>}
-          {tag.map((t) => <span class="badge">{t}</span>)}
+          {status && <span class={`badge badge-${status}`}>{status}</span>}
+          {tags.map((t) => <span class="badge">{t}</span>)}
         </div>
       )}
     </header>
@@ -39,7 +39,7 @@ const sezione = sezioni[backlinksUrl.split('/')[1]];
     </div>
     <div data-pagefind-ignore>
       <Backlinks url={backlinksUrl} />
-      <slot name="fine" />
+      <slot name="after" />
     </div>
   </article>
 </BaseLayout>

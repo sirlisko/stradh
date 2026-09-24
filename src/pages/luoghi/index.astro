@@ -4,17 +4,17 @@ import CardGrid from '../../components/CardGrid.astro';
 import Card from '../../components/Card.astro';
 import { getCollection } from 'astro:content';
 
-const luoghi = (await getCollection('luoghi')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
+const places = (await getCollection('luoghi')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
 ---
 <BaseLayout title="Luoghi">
   <h1 class="page-title">Luoghi</h1>
   <p class="page-lede">Villaggi, castelli, foreste e altri luoghi di Barovia.</p>
   <CardGrid>
-    {luoghi.map((l) => (
+    {places.map((l) => (
       <Card
         href={`/luoghi/${l.id}`}
-        titolo={l.data.titolo}
-        estratto={l.data.estratto}
+        title={l.data.titolo}
+        excerpt={l.data.estratto}
         meta={[l.data.tipo, l.data.regione].filter(Boolean).join(' · ')}
       />
     ))}

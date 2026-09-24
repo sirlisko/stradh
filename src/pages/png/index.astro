@@ -4,19 +4,19 @@ import CardGrid from '../../components/CardGrid.astro';
 import Card from '../../components/Card.astro';
 import { getCollection } from 'astro:content';
 
-const png = (await getCollection('png')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
+const npcs = (await getCollection('png')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
 ---
 <BaseLayout title="PNG">
   <h1 class="page-title">Personaggi Non Giocanti</h1>
   <p class="page-lede">Alleati, nemici e comparse incontrate a Barovia.</p>
   <CardGrid>
-    {png.map((p) => (
+    {npcs.map((p) => (
       <Card
         href={`/png/${p.id}`}
-        titolo={p.data.titolo}
-        estratto={p.data.estratto}
+        title={p.data.titolo}
+        excerpt={p.data.estratto}
         meta={[p.data.ruolo, p.data.luogo].filter(Boolean).join(' · ')}
-        stato={p.data.stato}
+        status={p.data.stato}
       />
     ))}
   </CardGrid>

@@ -1,6 +1,9 @@
 import { visit } from 'unist-util-visit';
 import { getSlugMap, normalize, WIKILINK_RE } from './wikilinks.mjs';
 
+const escapeHtml = (s) =>
+  s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
 export default function remarkWikilinks() {
   return (tree) => {
     const slugMap = getSlugMap();
@@ -34,9 +37,9 @@ export default function remarkWikilinks() {
         } else {
           newNodes.push({
             type: 'html',
-            value: `<span class="wikilink-broken" title="Nessuna pagina trovata per &quot;${target}&quot;">${label}</span>`,
+            value: `<span class="wikilink-broken" title="Nessuna pagina trovata per &quot;${escapeHtml(target)}&quot;">${escapeHtml(label)}</span>`,
           });
-          console.warn(`[wikilinks] Link non risolto: [[${target}]]`);
+          console.warn(`[wikilinks] Unresolved link: [[${target}]]`);
         }
 
         lastIndex = match.index + full.length;

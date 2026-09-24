@@ -1,78 +1,78 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { romano, dataLunga } from '../lib/romano';
+import { toRoman, longDate } from '../lib/format';
 
-const sessioni = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
-const ultima = sessioni[0];
+const sessions = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
+const latest = sessions[0];
 
-const personaggi = (await getCollection('personaggi')).sort((a, b) =>
+const characters = (await getCollection('personaggi')).sort((a, b) =>
   a.data.titolo.localeCompare(b.data.titolo)
 );
-const immaginiComplete: Record<string, string> = {
+const portraits: Record<string, string> = {
   artemis: '/images/personaggi/artemis-full.png',
   'don-matteor': '/images/personaggi/don-matteor-full.png',
   erieth: '/images/personaggi/erieth-full.png',
   tarik: '/images/personaggi/tarik-full.png',
 };
-const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
+const party = characters.filter((p) => portraits[p.id]);
 ---
 <BaseLayout title="Home" masthead>
-  <p class="prossima-sessione" id="prossima-sessione" hidden>
-    Prossima sessione: <span id="prossima-sessione-value"></span>
+  <p class="next-session" id="next-session" hidden>
+    Prossima sessione: <span id="next-session-value"></span>
   </p>
 
-  {ultima && (
-    <section class="ultima-sessione">
+  {latest && (
+    <section class="latest-session">
       <p class="kicker kicker-split">
-        <span>Ultima sessione · {romano(ultima.data.numero)}</span>
-        <span>{dataLunga(ultima.data.data)}</span>
+        <span>Ultima sessione · {toRoman(latest.data.numero)}</span>
+        <span>{longDate(latest.data.data)}</span>
       </p>
-      <h2><a href={`/diario/${ultima.id}`}>{ultima.data.titolo}</a></h2>
-      {ultima.data.estratto && <p class="capolettera">{ultima.data.estratto}</p>}
-      <p class="continua"><a href={`/diario/${ultima.id}`}>Continua a leggere</a> &rarr;</p>
+      <h2><a href={`/diario/${latest.id}`}>{latest.data.titolo}</a></h2>
+      {latest.data.estratto && <p class="drop-cap">{latest.data.estratto}</p>}
+      <p class="read-more"><a href={`/diario/${latest.id}`}>Continua a leggere</a> &rarr;</p>
     </section>
   )}
 
   <script>
     const endpoint = 'https://cms.sirlisko.com/items/stradh';
-    const item = document.getElementById('prossima-sessione');
-    const valueEl = document.getElementById('prossima-sessione-value');
+    const item = document.getElementById('next-session');
+    const valueEl = document.getElementById('next-session-value');
 
     fetch(endpoint)
       .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
       .then(({ data }) => {
         if (!data?.next_session || !item || !valueEl) return;
-        const dataSessione = new Date(data.next_session);
-        if (Number.isNaN(dataSessione.getTime())) return;
-        if (dataSessione.getTime() < Date.now()) return; // sessione già passata
+        const sessionDate = new Date(data.next_session);
+        if (Number.isNaN(sessionDate.getTime())) return;
+        if (sessionDate.getTime() < Date.now()) return; // already happened
 
-        const giorno = dataSessione.toLocaleDateString('it-IT', {
+        const day = sessionDate.toLocaleDateString('it-IT', {
           weekday: 'long',
           day: 'numeric',
           month: 'long',
         });
-        const ora = dataSessione.toLocaleTimeString('it-IT', {
+        const time = sessionDate.toLocaleTimeString('it-IT', {
           hour: '2-digit',
           minute: '2-digit',
         });
 
-        valueEl.textContent = `${giorno} alle ${ora}`;
+        valueEl.textContent = `${day} alle ${time}`;
         item.hidden = false;
       })
       .catch(() => {
-        // CMS non raggiungibile: nessuna sessione mostrata.
+        // CMS unreachable: leave the next session hidden.
       });
   </script>
 
-  {gruppo.length > 0 && (
+  {party.length > 0 && (
     <section>
-      <div class="fregio" aria-hidden="true">&#8258;</div>
+      <div class="ornament" aria-hidden="true">&#8258;</div>
       <h2 class="section-title">La compagnia</h2>
       <div class="cast-grid">
-        {gruppo.map((p) => (
+        {party.map((p) => (
           <a class="cast-portrait" href={`/personaggi/${p.id}`}>
-            <img src={immaginiComplete[p.id]} alt="" loading="lazy" />
+            <img src={portraits[p.id]} alt="" loading="lazy" />
             <span>{p.data.titolo}</span>
           </a>
         ))}
@@ -81,15 +81,15 @@ const gruppo = personaggi.filter((p) => immaginiComplete[p.id]);
   )}
 
   <section>
-    <div class="fregio" aria-hidden="true">&#8258;</div>
+    <div class="ornament" aria-hidden="true">&#8258;</div>
     <h2 class="section-title">Indice delle sessioni</h2>
-    <ol class="indice">
-      {sessioni.map((s) => (
+    <ol class="session-index">
+      {sessions.map((s) => (
         <li>
-          <span class="indice-numero">{romano(s.data.numero)}</span>
+          <span class="session-index-number">{toRoman(s.data.numero)}</span>
           <a href={`/diario/${s.id}`}>{s.data.titolo}</a>
-          <span class="indice-puntini" aria-hidden="true"></span>
-          <span class="indice-data">
+          <span class="session-index-leader" aria-hidden="true"></span>
+          <span class="session-index-date">
             {s.data.data.toLocaleDateString('it-IT', { day: 'numeric', month: 'short' })}
           </span>
         </li>
