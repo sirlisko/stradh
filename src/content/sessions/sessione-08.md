@@ -18,7 +18,7 @@ al pomeriggio della festa del borgomastro.
 visto. Per strada la gente sta ancora scappando dalla [[Chiesa di
 Vallaki]], mentre il resto del villaggio converge sulla piazza con vimini e
 ghirlande per i preparativi della festa. In camera trova [[Artemis]] e
-Tarik; la lettera di [[Strahd von Zarovich]] è ancora sul tavolino, e
+Tariq; la lettera di [[Strahd von Zarovich]] è ancora sul tavolino, e
 nessuno la tocca — ma ogni tanto l'occhio ci cade sopra. Artemis, davanti
 al gruppo, ha coperto l'assenza di Erieth: si erano divisi la città, lui a
 est (dove ha seguito gli incappucciati), Erieth a ovest.
@@ -26,7 +26,7 @@ est (dove ha seguito gli incappucciati), Erieth a ovest.
 Il piano per la [[Villa del Borgomastro|villa]] viene rifinito: Artemis
 conferma che davanti alla porta ci sono ancora due guardie, come la prima
 volta. Erieth entrerà invisibile, Artemis da una finestra sul retro.
-[[Tarik]] viene convinto a partecipare: non ha nulla per comunicare a
+[[Tariq]] viene convinto a partecipare: non ha nulla per comunicare a
 distanza, ma può piazzare allarmi, identificare oggetti magici e ha Calm
 Emotions preparata.
 
@@ -39,7 +39,7 @@ Nessuno si muove attorno al carro. Urwin fornisce anche il profilo di
 scoperto della "felicità").
 
 Sistema di segnali coi corvi, concordato con Urwin al bancone: un cenno
-della mano di Artemis o Tarik richiama un corvo alla finestra della camera
+della mano di Artemis o Tariq richiama un corvo alla finestra della camera
 per chiamare Erieth; un saluto a mano aperta sopra la testa di Don Matteor
 (o di [[Ismark Kolyanovich]]/[[Ireena]]) fa convergere più corvi possibile
 attorno alla villa per fare confusione e distrarre le guardie — segnale
@@ -50,8 +50,8 @@ noi." Erieth resta indietro per mezz'ora di riposo breve e un rituale.
 
 ## Le statuette identificate
 
-Camminando verso la piazza, Artemis mostra a Tarik le statuette trovate
-nella [[Bottega del Becchino]]. Tarik le identifica in 10 minuti: una è
+Camminando verso la piazza, Artemis mostra a Tariq le statuette trovate
+nella [[Bottega del Becchino]]. Tariq le identifica in 10 minuti: una è
 una pozione di cura ferite (2d4+2), nonostante colore e odore non lo
 lascino intuire; l'altra riduce di 4 la Forza di chi la beve. Entrambe
 monouso e da bere per intero. Restano ad Artemis.
@@ -69,7 +69,7 @@ le offre il braccio sui gradini; lei lo ignora completamente, gelida,
 spostandosi un centimetro alla volta. Izek si ferma ai piedi della
 scalinata e non sale.
 
-Nel frattempo Artemis e Tarik sgusciano via dalle retrovie. Artemis urta
+Nel frattempo Artemis e Tariq sgusciano via dalle retrovie. Artemis urta
 una signora che si accorge che non è del posto, ma se la cava con una
 scusa sui reumatismi; nessuno li ferma. Artemis fa il cenno ai corvi, che
 si alzano dai tetti verso la locanda.
@@ -114,12 +114,12 @@ incappuccia ed esce per strade secondarie verso la villa.
 
 Il gruppo si ricongiunge sul retro della [[Villa del Borgomastro]]. Nessuna
 ronda esterna: solo le due guardie all'ingresso. Da una finestra si vede
-una serva che prepara cibo in cucina. Il gufo di Tarik fa ricognizione al
+una serva che prepara cibo in cucina. Il gufo di Tariq fa ricognizione al
 piano superiore: due guardie visibili, una stanza con le tende tirate, e
 le scale che salgono.
 
 Erieth scassina una finestra ed entra. Ha gli scarponi infangati e rischia
-di lasciare tracce: Tarik risolve con una prestidigitazione che li pulisce
+di lasciare tracce: Tariq risolve con una prestidigitazione che li pulisce
 e li fa anche sembrare pantofole da strano principe. Erieth ascolta alla
 porta, non sente nulla, si rende invisibile, la socchiude e scopre due
 guardie subito oltre. Fa allontanare i compagni, poi spalanca la porta di
@@ -136,7 +136,7 @@ corda per Artemis, ma sotto il peso il letto usato come ancoraggio slitta
 sul pavimento di legno, facendo rumore: Erieth molla la corda e chiude la
 finestra. Artemis, appena partito, si punta coi piedi al muro e si lancia
 in una capriola all'indietro, atterrando in silenzio; si nasconde nel
-cespuglio con Tarik, e la guardia che si sporge dalla finestra non li vede.
+cespuglio con Tariq, e la guardia che si sporge dalla finestra non li vede.
 
 Le guardie irrompono nella stanza chiedendosi chi abbia spostato il letto
 e se sia stato "Victor" — commentano che di solito le cose strane arrivano
@@ -157,4 +157,4 @@ sale la scaletta a pioli e richiude la botola sotto di sé. La soffitta è
 polverosa, circa 6 metri quadrati, soffitto spiovente fino a 6 metri, travi
 coperte di ragnatele: un vecchio tavolo con sopra una lanterna, e nient'altro.
 Nessuna traccia individuata a terra. Si avvicina alla finestra per cercare
-di attirare l'attenzione del gufo di Tarik — e qui la sessione si chiude.
+di attirare l'attenzione del gufo di Tariq — e qui la sessione si chiude.

@@ -17,9 +17,9 @@ procedure. Content stays in Italian and follows `CLAUDE.md`.
   (the correct canonical spelling, otherwise the one with more history) and
   fold the others into it.
 
-For spelling, check https://5e.tools/adventure.html#cos, spoiler-free as
-always. If the user's intent is unclear (which name wins, whether two NPCs
-are really the same), ask before touching anything.
+For spelling, check the module reference named in `CLAUDE.local.md`,
+spoiler-free as always. If the user's intent is unclear (which name wins,
+whether two NPCs are really the same), ask before touching anything.
 
 New filename = kebab-case, accent-free `titolo` (e.g. `Ismark Kolyanovich` →
 `ismark-kolyanovich.md`).

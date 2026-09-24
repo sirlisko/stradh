@@ -8,7 +8,7 @@ estratto: Città natale del gruppo, capitale del regno omonimo, a nord del conti
 
 Città di partenza della compagnia, prima di Barovia. Qui vive il padre di
 [[Artemis]], la cui casa è teatro dello scontro che dà origine al gruppo:
-[[Erieth]] e [[Tarik]], inseguendo [[I Fratelli Banditi|alcuni lestofanti]]
+[[Erieth]] e [[Tariq]], inseguendo [[I Fratelli Banditi|alcuni lestofanti]]
 in cerca di vendetta contro Artemis, si ritrovano a difendere la casa
 insieme ad Artemis stesso e a [[Don Matteor]].
 

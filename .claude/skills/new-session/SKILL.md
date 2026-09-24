@@ -39,8 +39,9 @@ Before writing anything:
   be matched against it — including near-misses from speech
   recognition (e.g. "Vargas Vallakovich" → `Barone Vargas`, "Ismarc" →
   `Ismark Kolyanovich`).
-- For names you can't match, check canonical spelling on
-  https://5e.tools/adventure.html#cos. Use it for spelling and to
+- For names you can't match, check canonical spelling in the module
+  reference named in `CLAUDE.local.md` (if there is none, flag the name in
+  the report instead). Use it for spelling and to
   disambiguate only — never bring in anything the party hasn't learned in
   play.
 

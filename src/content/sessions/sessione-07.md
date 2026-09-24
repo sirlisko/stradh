@@ -16,7 +16,7 @@ hanno notato il bagliore.
 
 ## Delegazione al Borgomastro
 
-[[Don Matteor]], [[Ismark Kolyanovich]], [[Ireena]] e [[Tarik]] portano un
+[[Don Matteor]], [[Ismark Kolyanovich]], [[Ireena]] e [[Tariq]] portano un
 regalo (un barilotto di spirito e delle bottiglie di vino riconfezionate)
 e vengono ricevuti nello studio di [[Barone Vargas]]. Ismark recita bene la
 parte del Borgomastro di Barovia in visita ufficiale. La nota più
@@ -24,7 +24,7 @@ inquietante è [[Izek]], il capitano delle guardie, che si fissa
 ossessivamente su Ireena e tenta di portarla a vedere "il suo alloggio". La
 situazione degenera leggermente ma il gruppo riesce a cavarsela. Don Matteor,
 con Detect Magic, conferma che le due aure magiche sono ancora nelle stesse
-posizioni nell'edificio. Il gufo di [[Tarik]] sbircia dalle finestre e
+posizioni nell'edificio. Il gufo di [[Tariq]] sbircia dalle finestre e
 individua la stanza delle guardie, la cucina, la camera del Borgomastro e
 uno stanzino polveroso al piano più alto.
 

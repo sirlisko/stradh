@@ -10,7 +10,7 @@ Ha un patrono a cui riferisce regolarmente tramite un rituale (si taglia la
 mano e ne contatta la presenza in un vuoto bianco). Il patrono percepisce
 tutto ciò che Erieth vede e fa, e gli ha ordinato fin dall'inizio della
 campagna, a [[Goya]], di recuperare un anello dal dito di uno de
-[[I Fratelli Banditi|i fratelli banditi]]. Erieth e [[Tarik]] li inseguono
+[[I Fratelli Banditi|i fratelli banditi]]. Erieth e [[Tariq]] li inseguono
 fino a casa del [[Padre di Artemis (nome sconosciuto)|padre di Artemis]],
 dove li affrontano insieme ad [[Artemis]] e [[Don Matteor]]; il fratello
 che portava l'anello non era però presente. Rintracciato in seguito in un

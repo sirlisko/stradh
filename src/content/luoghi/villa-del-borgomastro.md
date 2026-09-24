@@ -17,7 +17,7 @@ clan.
 Il gruppo vi si presenta ufficialmente per la festa del Borgomastro: sul
 retro sorvegliano solo due guardie all'ingresso, nessuna ronda esterna.
 [[Erieth]] entra invisibile da una finestra scassinata (ripulita dal fango
-da [[Tarik]] con un tocco di prestidigitazione), elude due guardie ed
+da [[Tariq]] con un tocco di prestidigitazione), elude due guardie ed
 esplora il primo piano — camera da letto, stanza di cipria con un secondo
 specchio (non magico), camera padronale, guardaroba — fino a raggiungere
 via una botola una prima soffitta polverosa. [[Artemis]] entra da una

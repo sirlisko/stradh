@@ -8,7 +8,7 @@ A [[Goya]], capitale di Morgren, [[Artemis]] si attira l'odio di alcuni
 lestofanti, che si vendicano attaccando suo [[Padre di Artemis (nome
 sconosciuto)|padre]]. Nello stesso momento il patrono di [[Erieth]] gli
 ordina di recuperare un anello dal dito di uno dei fratelli lestofanti:
-Erieth e [[Tarik]] li inseguono e li affrontano a casa del padre di
+Erieth e [[Tariq]] li inseguono e li affrontano a casa del padre di
 Artemis, insieme a lui e a [[Don Matteor]]. Il terzo fratello — quello che
 dovrebbe portare l'anello — non è presente allo scontro.
 

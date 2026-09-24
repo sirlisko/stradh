@@ -9,7 +9,7 @@ tag: [Rogue]
 Origine del gruppo: attira l'odio de [[I Fratelli Banditi|alcuni
 lestofanti]] a [[Goya]], che si vendicano attaccando suo padre; Artemis
 difende la casa insieme al [[Padre di Artemis (nome sconosciuto)|padre]],
-[[Erieth]], [[Tarik]] e [[Don Matteor]], dando così inizio al gruppo.
+[[Erieth]], [[Tariq]] e [[Don Matteor]], dando così inizio al gruppo.
 Specializzato in infiltrazione: si è reso
 invisibile per esplorare la [[Villa del Borgomastro]] dall'esterno, ha
 seguito gli incappucciati de [[I Veri Nobili di Vallaki]] fino al loro

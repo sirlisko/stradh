@@ -23,7 +23,7 @@ battuto. Una finestra si affaccia su quello che è in realtà la
 prosecuzione del tetto, non un balcone.
 
 Per non interrompere la propria invisibilità, Erieth agita la lanterna
-spenta per attirare l'attenzione del gufo famiglio di [[Tarik]], in
+spenta per attirare l'attenzione del gufo famiglio di [[Tariq]], in
 ricognizione nei paraggi. Una volta stabilito il contatto, chiede che gli
 venga portata su la corda: troppo pesante per il gufo, viene invece
 sollevata con Mano Magica.
@@ -41,7 +41,7 @@ collega alla camera padronale sottostante incastrandola con una lama.
 
 ## Il sentiero nella soffitta
 
-Procedono con cautela lungo il sentiero tra le cianfrusaglie — Tarik
+Procedono con cautela lungo il sentiero tra le cianfrusaglie — Tariq
 avanti (il più abile a percepire oggetti magici), Artemis attento a
 eventuali trappole, Don Matteor di retroguardia. Non trovano nulla di
 valore tra vecchi quadri e oggetti d'antiquariato, né tracce di passi, né

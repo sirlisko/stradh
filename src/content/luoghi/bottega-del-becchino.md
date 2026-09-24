@@ -13,6 +13,6 @@ l'inseguimento sul carro.
 
 Nella bottega vengono trovati anche un foglio con un ordine di riempire
 bare di terra, firmato [[P. (identità sconosciuta)|"P."]], due statuette con liquidi misteriosi (poi
-identificate da [[Tarik]] come una pozione di cura ferite e una pozione
+identificate da [[Tariq]] come una pozione di cura ferite e una pozione
 che riduce la Forza) e 50 monete d'oro sotto il letto. Alla seconda visita
 la bottega risulta vuota: Van der Vort è scomparso.

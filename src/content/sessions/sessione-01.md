@@ -2,7 +2,7 @@
 titolo: L'agguato a casa del padre di Artemis
 numero: 1
 data: 2026-03-25
-estratto: A Goya la vendetta di alcuni lestofanti contro Artemis ricade sul padre; Erieth, in missione per il suo patrono, si ritrova a difendere la casa insieme a Tarik e Don Matteor.
+estratto: A Goya la vendetta di alcuni lestofanti contro Artemis ricade sul padre; Erieth, in missione per il suo patrono, si ritrova a difendere la casa insieme a Tariq e Don Matteor.
 luoghiVisitati: [Goya]
 tag: [inizio della campagna]
 ---
@@ -22,12 +22,12 @@ sconosciuto)|padre]] anziano.
 ## L'ordine del patrono
 
 Nello stesso momento, il patrono di [[Erieth]] gli ordina di recuperare un
-anello che sta al dito di uno dei lestofanti. Erieth, insieme a [[Tarik]],
+anello che sta al dito di uno dei lestofanti. Erieth, insieme a [[Tariq]],
 li insegue.
 
 ## Lo scontro
 
-L'inseguimento porta Erieth e Tarik a casa del padre di Artemis, dove si
+L'inseguimento porta Erieth e Tariq a casa del padre di Artemis, dove si
 ritrovano a fronteggiare gli aggressori insieme allo stesso Artemis e a
 [[Don Matteor]]. Una volta sconfitti e uccisi i nemici, Erieth scopre che
 il terzo dei tre fratelli banditi — quello che dovrebbe portare l'anello

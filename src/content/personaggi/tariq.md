@@ -1,8 +1,8 @@
 ---
-titolo: Tarik Cornelius
+titolo: Tariq Cornelius
 stato: vivo
 estratto: Studioso di magia con un gufo famiglio, esperto nell'identificare oggetti magici.
-immagine: /images/personaggi/tarik.png
+immagine: /images/personaggi/tariq.png
 tag: [Wizard]
 ---
 

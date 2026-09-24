@@ -12,7 +12,7 @@ tag: [colpo di scena]
 Nello studio segreto della soffitta, il gruppo esamina il tappeto
 impolverato: sotto c'è un secondo cerchio di teletrasporto disegnato
 peggio di quelli sulle pergamene, un evidente tentativo di replicarlo
-senza successo. [[Tarik]] lo riconosce e spiega agli altri come
+senza successo. [[Tariq]] lo riconosce e spiega agli altri come
 funzionano questi sigilli: una combinazione univoca di rune collega due
 punti fissi, ma un cerchio "usa e getta" come questo scompare dopo un
 solo utilizzo — solo quelli permanenti, in luoghi come templi, restano
@@ -72,7 +72,7 @@ secondo [[Urwin]], una delle sue spie.
 
 ## Ritorno alla locanda
 
-Riuniti alla [[Locanda di Urwin]], [[Tarik]] identifica gli anelli
+Riuniti alla [[Locanda di Urwin]], [[Tariq]] identifica gli anelli
 sottratti al ragazzo — nessuno magico, ma uno reca lo stemma della casata
 Vallakovic — e studia il grimorio: trucchetti e incantesimi fino al
 quinto livello (tra cui palla di fuoco, volare e invisibilità superiore),

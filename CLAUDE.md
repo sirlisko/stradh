@@ -38,8 +38,9 @@ These apply to every content edit, by hand or through a skill.
   DM asides, out-of-character explanations, slips the DM corrected, and
   anything only one character learned in secret unless it was shared with
   the group. To check the canonical spelling of a name or clarify an
-  ambiguous detail, use https://5e.tools/adventure.html#cos (the official
-  Curse of Strahd module) as reference. Don't copy from it anything the
+  ambiguous detail, use the official Curse of Strahd module as reference
+  (the source to consult, if any, is set in `CLAUDE.local.md`, which is
+  gitignored). Don't copy from it anything the
   characters haven't discovered in play yet (plot twists, secret identities,
   future developments) — the players themselves read this site.
 - **Append, don't rewrite:** when an existing entity changes, update its
