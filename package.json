@@ -3,12 +3,18 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "repository": "github:sirlisko/curse-of-stradh",
+  "packageManager": "pnpm@12.5.1",
+  "engines": {
+    "node": ">=22.12"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
-    "trascrivi": "node scripts/trascrivi.mjs",
-    "sessione": "node scripts/sessione.mjs"
+    "transcribe": "node scripts/transcribe.mjs",
+    "session": "node scripts/session.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.0",
@@ -16,7 +22,9 @@
     "@fontsource/im-fell-english": "^5.3.0",
     "@fontsource/im-fell-english-sc": "^5.3.0",
     "@fontsource/im-fell-great-primer": "^5.3.0",
-    "astro": "^7.3.1",
+    "astro": "^7.3.1"
+  },
+  "optionalDependencies": {
     "parakeet-coreml": "^2.2.0"
   },
   "devDependencies": {

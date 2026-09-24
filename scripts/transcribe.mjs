@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Trascrive un file audio in audio/ in locale con Parakeet TDT v3
-// (via parakeet-coreml, accelerato dal Neural Engine su Apple Silicon).
-// Uso: pnpm trascrivi [-- audio/sessione-11.mp3]
-// Senza argomenti, cerca l'unico file audio in audio/ che non ha ancora un .txt.
+// Transcribes an audio file in audio/ locally with Parakeet TDT v3
+// (via parakeet-coreml, accelerated by the Neural Engine on Apple Silicon).
+// Usage: pnpm transcribe [-- audio/session-11.mp3]
+// With no argument, picks the only audio file in audio/ without a matching .txt.
 
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -10,11 +10,10 @@ import { createRequire } from 'node:module';
 import os from 'node:os';
 import path from 'node:path';
 
-// La build ESM di parakeet-coreml (dist/index.js) e rotta: contiene un
-// `require('bindings')` dinamico dentro un chunk bundlato che Node non sa
-// risolvere in modalita ESM ("Dynamic require ... is not supported"). La
-// build CommonJS (dist/index.cjs) funziona correttamente: la carichiamo
-// esplicitamente con createRequire invece di un normale `import`.
+// parakeet-coreml's ESM build (dist/index.js) is broken: it contains a dynamic
+// `require('bindings')` inside a bundled chunk that Node can't resolve in ESM
+// mode ("Dynamic require ... is not supported"). The CommonJS build
+// (dist/index.cjs) works, so load it explicitly with createRequire.
 const { ParakeetAsrEngine } = createRequire(import.meta.url)('parakeet-coreml');
 
 const AUDIO_DIR = path.join(process.cwd(), 'audio');
@@ -25,7 +24,7 @@ function findInputFile() {
   if (arg) return path.resolve(arg);
 
   if (!fs.existsSync(AUDIO_DIR)) {
-    console.error(`Cartella ${AUDIO_DIR} non trovata. Creala e mettici un file audio.`);
+    console.error(`Directory ${AUDIO_DIR} not found. Create it and put an audio file in it.`);
     process.exit(1);
   }
 
@@ -38,13 +37,13 @@ function findInputFile() {
     });
 
   if (candidates.length === 0) {
-    console.error('Nessun file audio nuovo trovato in audio/ (o hanno gia una trascrizione .txt corrispondente).');
+    console.error('No new audio file found in audio/ (or they all already have a matching .txt transcript).');
     process.exit(1);
   }
   if (candidates.length > 1) {
     console.error(
-      `Trovati piu file audio senza trascrizione: ${candidates.join(', ')}.\n` +
-        `Specificane uno: pnpm trascrivi -- audio/<file>`
+      `Found several audio files without a transcript: ${candidates.join(', ')}.\n` +
+        `Pick one: pnpm transcribe -- audio/<file>`
     );
     process.exit(1);
   }
@@ -59,7 +58,7 @@ function decodeToPcm(inputFile) {
     { stdio: 'inherit' }
   );
   if (result.status !== 0) {
-    console.error('Conversione audio con ffmpeg fallita.');
+    console.error('ffmpeg audio conversion failed.');
     process.exit(1);
   }
   const buffer = fs.readFileSync(pcmPath);
@@ -69,7 +68,7 @@ function decodeToPcm(inputFile) {
 
 const inputFile = findInputFile();
 if (!fs.existsSync(inputFile)) {
-  console.error(`File non trovato: ${inputFile}`);
+  console.error(`File not found: ${inputFile}`);
   process.exit(1);
 }
 
@@ -78,19 +77,19 @@ const base = path.basename(inputFile, ext);
 const dir = path.dirname(inputFile);
 const finalTxtPath = path.join(dir, `${base}.txt`);
 
-console.log(`Converto ${inputFile} in PCM 16kHz mono...`);
+console.log(`Converting ${inputFile} to 16kHz mono PCM...`);
 const samples = decodeToPcm(inputFile);
 
-console.log('Inizializzo Parakeet TDT v3 (al primo avvio scarica ~1.5GB di modelli, poi resta in cache)...');
+console.log('Initialising Parakeet TDT v3 (first run downloads ~1.5GB of models, cached afterwards)...');
 const engine = new ParakeetAsrEngine();
 await engine.initialize();
 
-console.log('Trascrivo...');
+console.log('Transcribing...');
 const result = await engine.transcribe(samples);
 engine.cleanup();
 
 fs.writeFileSync(finalTxtPath, result.text, 'utf-8');
 
 const relTxt = path.relative(process.cwd(), finalTxtPath);
-console.log(`\nTrascrizione salvata in ${relTxt} (${(result.durationMs / 1000).toFixed(1)}s di elaborazione)`);
-console.log(`Prossimo passo: pnpm sessione -- ${relTxt}`);
+console.log(`\nTranscript saved to ${relTxt} (${(result.durationMs / 1000).toFixed(1)}s processing time)`);
+console.log(`Next step: pnpm session -- ${relTxt}`);
