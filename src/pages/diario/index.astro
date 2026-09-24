@@ -7,7 +7,7 @@ import { toRoman, longDate } from '../../lib/format';
 
 const sessions = (await getCollection('sessions')).sort((a, b) => b.data.numero - a.data.numero);
 ---
-<BaseLayout title="Diario">
+<BaseLayout title="Diario" description="Il diario di tutte le sessioni della campagna, dalla prima all'ultima, con il racconto di ciò che la compagnia ha vissuto.">
   <h1 class="page-title">Diario delle sessioni</h1>
   <p class="page-lede">Il resoconto di ogni serata di gioco, dalla più recente.</p>
   <CardGrid>

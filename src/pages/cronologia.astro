@@ -5,7 +5,7 @@ import { toRoman, longDate } from '../lib/format';
 
 const sessions = (await getCollection('sessions')).sort((a, b) => a.data.numero - b.data.numero);
 ---
-<BaseLayout title="Cronologia">
+<BaseLayout title="Cronologia" description="La cronologia della campagna: le sessioni in ordine, con date e titoli, per ripercorrere il viaggio della compagnia.">
   <h1 class="page-title">Cronologia</h1>
   <p class="page-lede">La storia della campagna in ordine, sessione dopo sessione.</p>
 

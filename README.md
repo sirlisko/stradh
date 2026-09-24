@@ -1,4 +1,4 @@
-# Curse of Stradh
+# Curse of Strahd
 
 Companion site for an Italian-language *Curse of Strahd* (D&D 5e) campaign:
 session journal, player characters, NPCs and places, cross-linked with

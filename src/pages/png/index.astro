@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 
 const npcs = (await getCollection('png')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
 ---
-<BaseLayout title="PNG">
+<BaseLayout title="PNG" description="I personaggi non giocanti incontrati dalla compagnia: alleati, nemici e figure misteriose.">
   <h1 class="page-title">Personaggi Non Giocanti</h1>
   <p class="page-lede">Alleati, nemici e comparse incontrate a Barovia.</p>
   <CardGrid>

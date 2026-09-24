@@ -5,6 +5,10 @@ import EntryLayout from '../layouts/EntryLayout.astro';
 const entry = await getEntry('riassunto', 'overview');
 const { Content } = await render(entry);
 ---
-<EntryLayout title={entry.data.titolo} backlinksUrl="/riassunto">
+<EntryLayout
+  title={entry.data.titolo}
+  description="Il riassunto della campagna: la storia della compagnia dalle origini fino all'ultima sessione giocata."
+  backlinksUrl="/riassunto"
+>
   <Content />
 </EntryLayout>

@@ -22,7 +22,7 @@ const sections: Record<string, string> = {
 };
 const section = sections[backlinksUrl.split('/')[1]];
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} type="article">
   <article data-pagefind-body data-pagefind-filter={section && `sezione:${section}`}>
     <header class="entry-header">
       {image && <img class="entry-image" src={image} alt={title} />}

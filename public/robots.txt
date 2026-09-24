@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stradh.ogreballerino.com/sitemap-index.xml
+Sitemap: https://strahd.ogreballerino.com/sitemap-index.xml

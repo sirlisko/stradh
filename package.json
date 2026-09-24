@@ -1,10 +1,10 @@
 {
-  "name": "stradh",
+  "name": "strahd",
   "type": "module",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "repository": "github:sirlisko/stradh",
+  "repository": "github:sirlisko/strahd",
   "packageManager": "pnpm@12.5.1",
   "engines": {
     "node": ">=22.12"

@@ -14,7 +14,7 @@ const characters = (await getCollection('personaggi')).sort((a, b) =>
 const portraitFor = (id: string) => `/images/personaggi/${id}-full.png`;
 const party = characters.filter((p) => fs.existsSync(path.join(process.cwd(), 'public', portraitFor(p.id))));
 ---
-<BaseLayout title="Home" masthead>
+<BaseLayout masthead>
   <p class="next-session" id="next-session" hidden>
     Prossima sessione: <span id="next-session-value"></span>
   </p>
@@ -32,7 +32,7 @@ const party = characters.filter((p) => fs.existsSync(path.join(process.cwd(), 'p
   )}
 
   <script>
-    const endpoint = 'https://cms.sirlisko.com/items/stradh';
+    const endpoint = 'https://cms.sirlisko.com/items/strahd';
     const item = document.getElementById('next-session');
     const valueEl = document.getElementById('next-session-value');
 

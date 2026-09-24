@@ -1,4 +1,4 @@
-# Curse of Stradh — project conventions
+# Curse of Strahd — project conventions
 
 Companion site for a Curse of Strahd (D&D 5e) campaign, built with Astro. The
 sections (diario, riassunto, personaggi, PNG, luoghi) are cross-linked with

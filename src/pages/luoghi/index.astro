@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 
 const places = (await getCollection('luoghi')).sort((a, b) => a.data.titolo.localeCompare(b.data.titolo));
 ---
-<BaseLayout title="Luoghi">
+<BaseLayout title="Luoghi" description="I luoghi visitati o sentiti nominare dalla compagnia nel corso della campagna.">
   <h1 class="page-title">Luoghi</h1>
   <p class="page-lede">Villaggi, castelli, foreste e altri luoghi di Barovia.</p>
   <CardGrid>

@@ -8,7 +8,7 @@ const characters = (await getCollection('personaggi')).sort((a, b) =>
   a.data.titolo.localeCompare(b.data.titolo)
 );
 ---
-<BaseLayout title="Personaggi">
+<BaseLayout title="Personaggi" description="I personaggi della compagnia: chi sono, da dove vengono e cosa hanno affrontato finora.">
   <h1 class="page-title">Personaggi</h1>
   <p class="page-lede">Gli avventurieri del gruppo.</p>
   <CardGrid>
