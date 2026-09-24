@@ -1,10 +1,10 @@
 {
-  "name": "curse-of-stradh",
+  "name": "stradh",
   "type": "module",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "repository": "github:sirlisko/curse-of-stradh",
+  "repository": "github:sirlisko/stradh",
   "packageManager": "pnpm@12.5.1",
   "engines": {
     "node": ">=22.12"
