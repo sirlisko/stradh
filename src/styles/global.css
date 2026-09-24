@@ -625,12 +625,61 @@ main {
   height: auto;
 }
 
+.map-carta {
+  fill: #e6d7b3;
+}
+
+.map-strada-percorsa {
+  fill: none;
+  stroke: var(--color-rubric);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.map-strada-conosciuta {
+  fill: none;
+  stroke: var(--color-ink);
+  stroke-width: 2.5;
+  stroke-dasharray: 9 8;
+  stroke-linecap: round;
+  opacity: 0.75;
+}
+
+.map-nebbia {
+  fill: none;
+  stroke: var(--color-bg);
+  stroke-width: 170;
+}
+
+.map-rosa-cerchio {
+  fill: none;
+  stroke: var(--color-ink);
+  stroke-width: 1.5;
+}
+
+.map-rosa-pieno {
+  fill: var(--color-ink);
+}
+
+.map-rosa-vuoto {
+  fill: var(--color-bg);
+  stroke: var(--color-ink);
+  stroke-width: 1.2;
+}
+
+.map-rosa-n {
+  font-family: var(--font-display);
+  font-size: 30px;
+  fill: var(--color-ink);
+}
+
 .map-pin-link {
   cursor: pointer;
 }
 
 .map-pin {
-  stroke-width: 2.5;
+  stroke-width: 3;
   transition: r 0.15s ease;
 }
 
@@ -647,7 +696,7 @@ main {
 
 .map-pin-link:hover .map-pin,
 .map-pin-link:focus-visible .map-pin {
-  r: 14;
+  r: 17;
 }
 
 .map-pin-label-bg {
@@ -658,7 +707,7 @@ main {
 
 .map-pin-label {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 24px;
   fill: var(--color-ink);
 }
 
@@ -696,6 +745,19 @@ main {
 
 .map-legend-dot-ignoto {
   border: 2px dashed var(--color-ink);
+}
+
+.map-legend-line {
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.map-legend-line-percorsa {
+  border-top: 3px solid var(--color-rubric);
+}
+
+.map-legend-line-conosciuta {
+  border-top: 2px dashed var(--color-ink);
 }
 
 .map-footnote {

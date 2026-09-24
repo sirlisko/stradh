@@ -85,13 +85,14 @@ ambiguità invece di indovinare in silenzio.
   server dopo aver aggiunto nuove entità risolve il problema.
 - La cartella `src/content/` può essere aperta direttamente come vault
   Obsidian per navigare graficamente i collegamenti.
-- La mappa è nascosta: il file è `src/pages/_mappa.astro` (il prefisso `_`
-  lo esclude dal routing) e non compare nella navigazione. Per ripristinarla,
-  rinominalo in `mappa.astro` e riaggiungi il link in
-  `src/components/Header.astro`. Mostra uno schizzo di viaggio con i luoghi
-  "di punta" di Barovia (non le tappe interne a un insediamento, es. le
-  botteghe di Vallaki); le coordinate dei pin sono scelte a mano nell'array
-  `nodi`, con eventuali strade in `stradePercorse` o `stradeConosciute`.
+- La mappa (`/mappa`, `src/pages/mappa.astro`) usa come sfondo un'immagine
+  dipinta (`public/images/mappe/barovia.webp`, senza scritte né strade per
+  non fare spoiler), desaturata dal filtro SVG `#seppia`. Sopra, in
+  coordinate 1920x1080, ci sono solo i luoghi "di punta" di Barovia (non le
+  tappe interne a un insediamento, es. le botteghe di Vallaki): pin scelti a
+  mano nell'array `nodi`, strade in `stradePercorse` (rosse) o
+  `stradeConosciute` (tratteggiate). Quando il gruppo raggiunge un luogo
+  nuovo, aggiungi il pin e sposta la strada da conosciuta a percorsa.
 - La ricerca (`/cerca`, `src/pages/cerca.astro`) usa Pagefind: l'indice viene
   generato da `pnpm build` (passo `pagefind --site dist`) e quindi NON esiste
   in `astro dev` — per provarla usa `pnpm build && pnpm preview`. Vengono
